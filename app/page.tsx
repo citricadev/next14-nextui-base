@@ -6,49 +6,40 @@ import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
+import { Container, Col } from "@citrica/objects"
 
 export default function Home() {
 	return (
-		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-			<div className="inline-block max-w-lg text-center justify-center">
-				<h1 className={title()}>Make&nbsp;</h1>
-				<h1 className={title({ color: "violet" })}>beautiful&nbsp;</h1>
-				<br />
-				<h1 className={title()}>
-					websites regardless of your design experience.
-				</h1>
-				<h2 className={subtitle({ class: "mt-4" })}>
-					Beautiful, fast and modern React UI library.
-				</h2>
+		<section>
+			<div className="bg-lime-400">
+				<Container className="flex flex-row h-36 justify-around items-center">
+					<h1 className="display">HERO BANER</h1>
+					<h2>Tagline</h2>
+				</Container>
 			</div>
-
-			<div className="flex gap-3">
-				<Link
-					isExternal
-					as={NextLink}
-					href={siteConfig.links.docs}
-					className={buttonStyles({ color: "primary", radius: "full", variant: "shadow" })}
-				>
-					Documentation
-				</Link>
-				<Link
-					isExternal
-					as={NextLink}
-					className={buttonStyles({ variant: "bordered", radius: "full" })}
-					href={siteConfig.links.github}
-				>
-					<GithubIcon size={20} />
-					GitHub
-				</Link>
-			</div>
-
-			<div className="mt-8">
-				<Snippet hideSymbol hideCopyButton variant="flat">
-					<span>
-						Get started by editing <Code color="primary">app/page.tsx</Code>
-					</span>
-				</Snippet>
-			</div>
+			<Container className="bg-black text-white bg-">
+				<Col cols={{ lg: 4, md: 6, sm: 4 }}>
+					<h3 className="display">Header 3</h3>
+				</Col>
+				<Col cols={{ lg: 4, md: 6, sm: 4 }}>
+					<h2>Header 3</h2>
+				</Col>
+				<Col cols={{ lg: 4, md: 6, sm: 4 }}>
+					<h1 className="display">Header 1</h1>
+				</Col>
+			</Container>
+			<Container className="bg-yellow-300">
+				<Col cols={{ lg: 12, md: 6, sm: 4 }}>
+					<div>
+						Otra Fila
+					</div>
+				</Col>
+			</Container>
+			<Container>
+				<Col cols={{ lg: 12, md: 6, sm: 4 }} className="flex flex-1 justify-center items-center h-screen bg-slate-300">
+					<h1> TEXT CENTER </h1>
+				</Col>
+			</Container>
 		</section>
 	);
 }
