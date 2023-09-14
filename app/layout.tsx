@@ -7,6 +7,8 @@ import Navbar from "@/components/citrica-ui/navbar";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 import Footer from "@/components/citrica-ui/footer";
+import HeaderCUI from "@/components/citrica-ui/header";
+
 
 export const metadata: Metadata = {
 	title: {
@@ -40,8 +42,13 @@ export default function RootLayout({
 				)}
 			>
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-					<div className="relative flex flex-col">
-						<Navbar />
+					<div className="flex flex-col">
+						<header className="bg-[url('/ScreenShot2023-08-04.png')] h-[982px] bg-center flex flex-col ">
+						<Navbar/> 
+						
+						<HeaderCUI/>
+						
+						</header>
 						<main>
 							{children}
 						</main>
