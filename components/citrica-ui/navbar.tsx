@@ -2,12 +2,13 @@ import { Container } from "@citrica/objects"
 
 const NavbarCUI = () => {
   return (
-    <div className="bg-amber-600 p-5">
+    <div className=" relative bg-[url('/ScreenShot2023-08-04.png')] h-[982px] bg-center flex items-center">
       <Container className="flex flex-row justify-between">
-          <div>
-            Logo
+          <div className="flex flex-col items-start">
+            <img src="/logo-corp-jordi-gold-white 1.svg" alt="" />
+            <h1 className=" font-normal text-5xl leading-[66px]">Exportacion, importacion <br />y distribucion de carnes <br />y menudencias</h1>
           </div>
-          <div>
+          <div className="">
             Burguer
           </div>
       </Container>
