@@ -6,20 +6,47 @@
 // COLORS
 
 // CITRICA SYSTEM COLORS
-$color-primary-black: #443C1D;
-$color-primary-dark: #87783A;
-$color-primary: #C0AF6D;
-$color-primary-light: #D4C89B;
-$color-primary-white: #FCFBF8;
-$color-secondary: #0B2037;
-$color-secondary-dark: #1C528C;
-$color-secondary-mid: #3783D7;
-$color-secondary-light: #D4E5F7;
-$color-secondary-white: #F2F7FC;
+// $color-primary-black: #443C1D;
+// $color-primary-dark: #87783A;
+// $color-primary: #C0AF6D;
+// $color-primary-light: #D4C89B;
+// $color-primary-white: #FCFBF8;
+// $color-secondary: #0B2037;
+// $color-secondary-dark: #1C528C;
+// $color-secondary-mid: #3783D7;
+// $color-secondary-light: #D4E5F7;
+// $color-secondary-white: #F2F7FC;
+
+$color-primary-lightest: “”;
+$color-primary-light: “”;
+$color-primary: #E40E20;
+$color-primary-dark: “”;
+$color-primary-darkest: “”;
+
+$color-secondary-lightest: “”;
+$color-secondary-light: “”;
+$color-secondary: #D5B16C;
+$color-secondary-dark: #A38243;
+$color-secondary-darkest: “”;
+
+$color-tertiary-lightest: “”;
+$color-tertiary-light: “”;
+$color-tertiary: #FCBF00;
+$color-tertiary-dark: “”;
+$color-tertiary-darkest: “”;
+
+$color-white: #FFFFFF;
+$color-black: #1D1D1B;
+
+$color-neutral-lightest: “”;
+$color-neutral-light: #EDEDED;
+$color-neutral-mid: “”;
+$color-neutral-dark: “”;
+$color-neutral-darkest: “”;
 //-------------------------------
 // FALTAN DEFINIR SI VAN O NO
-$color-white : #FFFFFF;
-$color-black : #353535;
+// $color-white : #FFFFFF;
+// $color-black : #353535;
 
 // CITRICA SYSTEM BORDER RADIOUS
 $border-radious-xsm: "";
@@ -39,8 +66,8 @@ $font-a : 'Girassol', cursive;
 $font-b : 'Lato', sans-serif;
 
 // CITRICA SYSTEM TYPOGRAPJY
-$font-family-a: 'Lato', sans-serif;
-$font-family-b: 'Girassol', cursive;
+$font-family-a: 'ChunkFiveEx';
+$font-family-b: 'Poppins', sans-serif;
 $font-family-c: "";
 
 $typography-display-lg: "";
@@ -173,7 +200,7 @@ $root-vars: (
         --color-white: $color-white,
         --color-black: $color-black,
         --color-primary: $color-primary,
-        --color-primary-black: $color-primary-black,
+        // --color-primary-black: $color-primary-black,
         --color-primary-dark: $color-primary-dark,
         --color-secondary: $color-secondary,
         // FONTS
