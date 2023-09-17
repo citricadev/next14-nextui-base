@@ -2,7 +2,7 @@ import { Container } from "@citrica/objects"
 
 const NavbarCUI = () => {
   return (
-    <div className="bg-amber-600 p-5">
+    <div className="p-5 absolute w-full bg-transparent">
       <Container className="flex flex-row justify-between">
           <div>
             Logo

@@ -28,7 +28,7 @@ export const Col = ({cols, noPadding=false, className="", children}) => {
 
     const arrayClasses = [
         { [`o-col-${lg}@lg`] : lg},
-        { [`o-col-push-${lg}@lg`] : lgPush},
+        { [`o-col-push-${lgPush}@lg`] : lgPush},
         { [`o-col-${md}@md`] : md},
         { [`o-col-push-${mdPush}@md`] : mdPush},
         { [`o-col-${sm}@sm`] : sm},

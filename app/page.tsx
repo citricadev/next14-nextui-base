@@ -1,6 +1,8 @@
 import { Container, Col } from "@citrica/objects";
 import Image from "next/image";
 import Timeline from "@/components/timeline";
+import Card from "@/components/citrica-ui/card";
+import Platforms from "@/components/platforms";
 
 export default function Home() {
 	return (
@@ -21,7 +23,7 @@ export default function Home() {
 				</Container>
 			</section>
 			<section className="about-us">
-				<Container className="flex flex-col h-screen justify-between py-24">
+				<Container className="flex flex-col h-screen justify-between">
 					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
 						<h2 className="headline text-gold-brand">
 							Quiénes somos
@@ -43,7 +45,7 @@ export default function Home() {
 				</Container>
 			</section>
 			<section className="history-section">
-				<Container className="py-24">
+				<Container>
 					<Col cols={{ lg: 10, md: 6, sm: 4 }}>
 						<h2 className="headline text-gold-brand">
 							Nuestra Historia
@@ -78,7 +80,7 @@ export default function Home() {
 			<section className="our-companies">
 				<Container>
 					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
-						<h2 className="headline text-gold-brand pt-24">Nuestras Empresas</h2>
+						<h2 className="headline text-gold-brand mb-16">Nuestras Empresas</h2>
 					</Col>
 				</Container>
 				<Container className="pb-24">
@@ -124,34 +126,88 @@ export default function Home() {
 			</section>
 			<section className="our-brands" >
 				<Container>
-					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
+					<Col cols={{ lg: 12, md: 6, sm: 4 }} className="mb-16">
 						<h2 className="headline text-gold-brand">Nuestras Marcas</h2>
 					</Col>
 				</Container>
 				<Container>
-					<Col cols={{ lg: 3, md: 6, sm: 4 }} className="center">
-							LOGO A
+					<Col cols={{ lg: 3, md: 3, sm: 4 }} className="center mb-14">
+						<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo"/>
 					</Col>
-					<Col cols={{ lg: 3, md: 6, sm: 4 }} className="center">
-							LOGO A
+					<Col cols={{ lg: 3, md: 3, sm: 4 }} className="center mb-14">
+						<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo"/>
 					</Col>
-					<Col cols={{ lg: 3, md: 6, sm: 4 }} className="center">
-							LOGO A
+					<Col cols={{ lg: 3, md: 3, sm: 4 }} className="center mb-14">
+						<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo"/>
 					</Col>
-					<Col cols={{ lg: 3, md: 6, sm: 4 }} className="center">
-							LOGO A
+					<Col cols={{ lg: 3, md: 3, sm: 4 }} className="center mb-14">
+						<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo"/>
 					</Col>
 				</Container>
 				<Container>
-					<Col cols={{ lg: 4, md: 6, sm: 4 }} className="center">
-						A
+					<Col cols={{ lgPush:2, lg:8, md: 6, sm: 4 }}>
+						<Container noPadding>
+							<Col cols={{ lg: 4, md: 2, sm: 4 }} className="center mb-14">
+								<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo"/>
+							</Col>
+							<Col cols={{ lg: 4, md: 2, sm: 4 }} className="center mb-14">
+								<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo"/>
+							</Col>
+							<Col cols={{ lg: 4, md: 2, sm: 4 }} className="center mb-14">
+								<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo"/>
+							</Col>
+						</Container>
 					</Col>
-					<Col cols={{ lg: 4, md: 6, sm: 4 }} className="center">
-						B
+				</Container>
+			</section>
+			<section className="our-partners">
+				<Container>
+					<Col cols={{ lg: 12, md: 6, sm: 4 }} >
+						<h2 className="headline text-gold-brand">Nuestros socios estratégicos</h2>
 					</Col>
-					<Col cols={{ lg: 4, md: 6, sm: 4 }} className="center">
-						C
+				</Container>
+				<Container>
+					<Col cols={{ lg: 6, md: 6, sm: 4 }} >
+						<div className="h-44 flex flex-col-reverse">
+							<picture>
+								<img src={'/img/greater-omaha-logo.png'} alt="Grater Omaha logo"/>
+							</picture>
+						</div>
+						<p className="copy py-5">Greater Omaha es una empresa estadounidense ubicada en Omaha, Nebraska especializada en la producción de carne de res premium </p>
 					</Col>
+					<Col cols={{ lg: 6, md: 6, sm: 4 }} >
+						<div className="h-44 flex flex-col-reverse">
+							<picture>
+								<img src={'/img/somave-logo.png'} alt="Somave logo"/>
+							</picture>
+						</div>
+						<p className="copy py-5">Grater Omaha es una empresa estadounidense ubicada en Omaha, Nebraska especializada en la producción de carne de res premium </p>
+					</Col>
+				</Container>
+			</section>
+			<section className="contact-section">
+				<Container>
+					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
+						<div className="h-96 flex flex-col justify-center">
+							<h2 className="headline text-gold-brand">Contáctanos</h2>
+							<div className="flex flex-row">
+								<span>icon</span>
+								<span>946 351 770</span>
+								<span>icon</span>
+								<span>info@corporacionjordi.com</span>
+							</div>
+						</div>
+					</Col>
+				</Container>
+			</section>
+			<section className="platforms">
+				<Container>
+					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
+						<h2 className="headline text-gold-brand">Plataformas</h2>
+					</Col>
+				</Container>
+				<Container>
+					<Platforms/>
 				</Container>
 			</section>
 		</>
