@@ -1,20 +1,20 @@
 // Typography
 $copy-responsive: (
   sm: (
-      font-size: 10pt,
+      font-size: 12px,
       line-height: 22px
   ),
   md: (
-    font-size: 14pt,
-    line-height: 22px
+    font-size: 14px,
+    line-height: 24px
   ),
   lg: (
-    font-size: 14pt,
-    line-height: 22px
+    font-size: 16px,
+    line-height: 26px
   )
 );
 .copy {
-  font-family: var(--font-family-a);
+  font-family: var(--font-family-c);
   font-weight: 500;
   letter-spacing: 0;
   text-decoration: none;
@@ -47,16 +47,16 @@ $display-responsive: (
 
 $headline-responsive: (
   sm: (
-      font-size: 10pt,
+      font-size: 20px,
       line-height: 22px
   ),
   md: (
-    font-size: 14pt,
-    line-height: 22px
+    font-size: 45px,
+    line-height: 50px
   ),
   lg: (
-    font-size: 14pt,
-    line-height: 22px
+    font-size: 56px,
+    line-height: 66px
   )
 );
 
@@ -74,12 +74,12 @@ $title-responsive: (
       line-height: 22px
   ),
   md: (
-    font-size: 14pt,
-    line-height: 22px
+    font-size: 29px,
+    line-height: 37px
   ),
   lg: (
-    font-size: 14pt,
-    line-height: 22px
+    font-size: 32px,
+    line-height: 40px
   )
 );
 .title {
@@ -161,4 +161,8 @@ $label-responsive: (
   letter-spacing: 0;
   text-decoration: none;
   text-transform: none;
+}
+// Typography colors
+.text-brand-gold{
+  color: #D5B16C;
 }

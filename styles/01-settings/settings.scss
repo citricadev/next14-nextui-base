@@ -62,6 +62,9 @@ $border-md: "";
 $border-bold: "";
 $border-extra-bold: "";
 
+// FONTS GOOGLE
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap);
+
 /* FONTS LOCALES */
 @font-face {
     font-family: "ChunkFiveEx";
@@ -79,7 +82,7 @@ $border-extra-bold: "";
 // CITRICA SYSTEM TYPOGRAPJY
 $font-family-a: 'ChunkFiveEx';
 $font-family-b: 'Restora', sans-serif;
-$font-family-c: "";
+$font-family-c: 'Poppins', sans-serif;
 
 $typography-display-lg: "";
 $typography-display-md: "";
