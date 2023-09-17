@@ -14,7 +14,7 @@ export default function Home() {
 			<div className="bg-lime-400">
 				<Container className="flex flex-row h-36 justify-around items-center">
 					<h1 className="display">HERO BANER</h1>
-					<h2>Tagline</h2>
+					<h2 className="headline">Tagline</h2>
 				</Container>
 			</div>
 			<Container className="bg-black text-white bg-">

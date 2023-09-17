@@ -1,23 +1,83 @@
-.btn{
-  border:0px;
-  padding: 4px 56px;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-family: var(--font-b);
-  text-align: center;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 19px;
+// Typography
+.copy {
+  font-family: var(--font-family-a);
+  font-weight: 500;
+  font-size: var(--copy-size);
+  line-height: var(--copy-height);
+  letter-spacing: 0;
+  text-decoration: none;
+  text-transform: none;
+}
+.display {
+  font-family: var(--font-family-a);
+  font-weight: 500;
+  font-size: var(--display-size);
+  line-height: var(--display-height);
+  letter-spacing: 0;
+  text-decoration: none;
+  text-transform: none;
 }
 
-.btn-primary{
-  background-color: var(--color-primary);
-  color: var(--color-primary-black);
+.headline {
+  font-family: var(--font-family-a);
+  font-weight: 500;
+  font-size: var(--headline-size);
+  line-height: var(--headline-height);
+  letter-spacing: 0;
+  text-decoration: none;
+  text-transform: none;
 }
-
-.btn-secondary{
-  background-color: var(--color-secondary);
-  color: var(--color-white);
+.title {
+  font-family: var(--font-family-a);
+  font-weight: 500;
+  font-size: var(--display-size);
+  line-height: var(--display-height);
+  letter-spacing: 0;
+  text-decoration: none;
+  text-transform: none;
+}
+.subtitle {
+  font-family: var(--font-family-a);
+  font-weight: 500;
+  font-size: var(--subtitle-size);
+  line-height: var(--subtitle-height);
+  letter-spacing: 0;
+  text-decoration: none;
+  text-transform: none;
+}
+.label {
+  font-family: var(--font-family-a);
+  font-weight: 500;
+  font-size: var(--label-size);
+  line-height: var(--label-height);
+  letter-spacing: 0;
+  text-decoration: none;
+  text-transform: none;
+}
+.btn {
+  font-family: var(--font-family-a);
+  font-weight: 500;
+  font-size: var(--btn-size);
+  line-height: var(--btn-height);
+  letter-spacing: 0;
+  text-decoration: none;
+  text-transform: none;
+}
+.btn-link {
+  font-family: var(--font-family-a);
+  font-weight: 500;
+  font-size: var(--btn-link-size);
+  line-height: var(--btn-link-height);
+  letter-spacing: 0;
+  text-decoration: none;
+  text-transform: none;
+}
+.btn-big {
+  font-family: var(--font-family-a);
+  font-weight: 500;
+  font-size: var(--btn-big-size);
+  line-height: var(--btn-big-height);
+  letter-spacing: 0;
+  text-decoration: none;
+  text-transform: none;
 }
