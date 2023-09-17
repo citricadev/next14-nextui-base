@@ -55,14 +55,11 @@ textarea:focus {
     background-color: var(--color-primary);
 }
 
-.title-text{
-    @include a-set($title-text);
-}
 
-.title-description{
-    margin-top:0px;
-    @include a-set($title-description);
-}
+// .title-description{
+//     margin-top:0px;
+//     @include a-set($title-description);
+// }
 
 
 .modal__bg {
