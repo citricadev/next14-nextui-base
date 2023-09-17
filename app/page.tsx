@@ -1,22 +1,25 @@
-import NextLink from "next/link";
-import { Link } from "@nextui-org/link";
-import { Snippet } from "@nextui-org/snippet";
-import { Code } from "@nextui-org/code"
-import { button as buttonStyles } from "@nextui-org/theme";
-import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
-import { Container, Col } from "@citrica/objects"
+import { Container, Col } from "@citrica/objects";
+import Image from "next/image";
 
 export default function Home() {
 	return (
-		<section>
-			<div className="bg-lime-400">
-				<Container className="flex flex-row h-36 justify-around items-center">
-					<h1 className="display">HERO BANER</h1>
-					<h2 className="headline">Tagline</h2>
+		<>
+			<section className="hero-section">
+				<Container className="flex flex-col h-screen justify-center">
+					<Col cols={{ lg: 8, md: 6, sm: 4 }}>
+						<Image
+							className="mb-10" 
+							width={257}
+							height={117}
+							src="/img/logo-corporacion-jordi.png" 
+							alt="logo"/>
+						<h2 className="display text-white">
+							Exportacion, importacion y distribucion de carnes y menudencias
+						</h2>
+					</Col>
 				</Container>
-			</div>
+			</section>
+
 			<Container className="bg-black text-white bg-">
 				<Col cols={{ lg: 4, md: 6, sm: 4 }}>
 					<h3 className="display">Header 3</h3>
@@ -40,6 +43,6 @@ export default function Home() {
 					<h1> TEXT CENTER </h1>
 				</Col>
 			</Container>
-		</section>
+		</>
 	);
 }

@@ -24,20 +24,20 @@ $copy-responsive: (
 
 $display-responsive: (
   sm: (
-      font-size: 10pt,
+      font-size: 20px,
       line-height: 22px
   ),
   md: (
-    font-size: 14pt,
-    line-height: 22px
+    font-size: 45px,
+    line-height: 50px
   ),
   lg: (
-    font-size: 24pt,
-    line-height: 22px
+    font-size: 56px,
+    line-height: 66px
   )
 );
 .display {
-  font-family: var(--font-family-b);
+  font-family: var(--font-family-a);
   font-weight: 500;
   letter-spacing: 0;
   text-decoration: none;
