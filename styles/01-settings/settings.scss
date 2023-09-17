@@ -62,12 +62,23 @@ $border-md: "";
 $border-bold: "";
 $border-extra-bold: "";
 
-$font-a : 'Girassol', cursive;
-$font-b : 'Lato', sans-serif;
+/* FONTS LOCALES */
+@font-face {
+    font-family: "ChunkFiveEx";
+    src: url('../../fonts/Chunkfive_Ex.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Restora";
+    src: url('../../fonts/RestoraExtraLight.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
 // CITRICA SYSTEM TYPOGRAPJY
 $font-family-a: 'ChunkFiveEx';
-$font-family-b: 'Poppins', sans-serif;
+$font-family-b: 'Restora', sans-serif;
 $font-family-c: "";
 
 $typography-display-lg: "";
@@ -116,36 +127,6 @@ $elevation-level-4: "";
 $elevation-level-5: "";
 
 //--------------
-
-
-$title-text: (
-    sm: (
-        font-size: 40px,
-        font-family: $font-a,
-        font-weight: 400,
-    ),
-    md: (
-        font-size: 40px,
-    ),
-    lg: (
-        font-size: 50px,
-    )
-);
-
-$title-description: (
-    sm: (
-        font-size: 18px,
-        font-family: $font-a,
-        font-weight: 200,
-    ),
-    md: (
-        font-size: 24px,
-    ),
-    lg: (
-        font-size: 28px,
-        line-height: 30px
-    )
-);
 
 $text-btns: (
     sm: (
@@ -204,9 +185,9 @@ $root-vars: (
         --color-primary-dark: $color-primary-dark,
         --color-secondary: $color-secondary,
         // FONTS
-        --font-family-a:$font-family-a,
-        --font-family-b:$font-family-b,
-        --font-family-c:$font-family-c,
+        --font-family-a: $font-family-a,
+        --font-family-b: $font-family-b,
+        --font-family-c: $font-family-c,
         // FONT PROPERTIES
         --copy-size: 12px,
         --copy-height: 16px,

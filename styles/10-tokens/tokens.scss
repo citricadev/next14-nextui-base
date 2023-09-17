@@ -1,59 +1,140 @@
 // Typography
+$copy-responsive: (
+  sm: (
+      font-size: 10pt,
+      line-height: 22px
+  ),
+  md: (
+    font-size: 14pt,
+    line-height: 22px
+  ),
+  lg: (
+    font-size: 14pt,
+    line-height: 22px
+  )
+);
 .copy {
   font-family: var(--font-family-a);
   font-weight: 500;
-  font-size: var(--copy-size);
-  line-height: var(--copy-height);
   letter-spacing: 0;
   text-decoration: none;
   text-transform: none;
+  @include a-set($copy-responsive);
 }
+
+$display-responsive: (
+  sm: (
+      font-size: 10pt,
+      line-height: 22px
+  ),
+  md: (
+    font-size: 14pt,
+    line-height: 22px
+  ),
+  lg: (
+    font-size: 24pt,
+    line-height: 22px
+  )
+);
 .display {
-  font-family: var(--font-family-a);
+  font-family: var(--font-family-b);
   font-weight: 500;
-  font-size: var(--display-size);
-  line-height: var(--display-height);
   letter-spacing: 0;
   text-decoration: none;
   text-transform: none;
+  @include a-set($display-responsive);
 }
+
+$headline-responsive: (
+  sm: (
+      font-size: 10pt,
+      line-height: 22px
+  ),
+  md: (
+    font-size: 14pt,
+    line-height: 22px
+  ),
+  lg: (
+    font-size: 14pt,
+    line-height: 22px
+  )
+);
 
 .headline {
   font-family: var(--font-family-a);
   font-weight: 500;
-  font-size: var(--headline-size);
-  line-height: var(--headline-height);
   letter-spacing: 0;
   text-decoration: none;
   text-transform: none;
+  @include a-set($headline-responsive);
 }
+$title-responsive: (
+  sm: (
+      font-size: 10pt,
+      line-height: 22px
+  ),
+  md: (
+    font-size: 14pt,
+    line-height: 22px
+  ),
+  lg: (
+    font-size: 14pt,
+    line-height: 22px
+  )
+);
 .title {
   font-family: var(--font-family-a);
   font-weight: 500;
-  font-size: var(--display-size);
-  line-height: var(--display-height);
   letter-spacing: 0;
   text-decoration: none;
   text-transform: none;
+  @include a-set($title-responsive);
 }
+$subtitle-responsive: (
+  sm: (
+      font-size: 10pt,
+      line-height: 22px
+  ),
+  md: (
+    font-size: 14pt,
+    line-height: 22px
+  ),
+  lg: (
+    font-size: 14pt,
+    line-height: 22px
+  )
+);
 .subtitle {
   font-family: var(--font-family-a);
   font-weight: 500;
-  font-size: var(--subtitle-size);
-  line-height: var(--subtitle-height);
   letter-spacing: 0;
   text-decoration: none;
   text-transform: none;
+  @include a-set($subtitle-responsive);
 }
+$label-responsive: (
+  sm: (
+      font-size: 10pt,
+      line-height: 22px
+  ),
+  md: (
+    font-size: 14pt,
+    line-height: 22px
+  ),
+  lg: (
+    font-size: 14pt,
+    line-height: 22px
+  )
+);
 .label {
   font-family: var(--font-family-a);
   font-weight: 500;
-  font-size: var(--label-size);
-  line-height: var(--label-height);
   letter-spacing: 0;
   text-decoration: none;
   text-transform: none;
+  @include a-set($label-responsive);
 }
+
 .btn {
   font-family: var(--font-family-a);
   font-weight: 500;
