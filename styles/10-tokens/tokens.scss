@@ -163,6 +163,41 @@ $label-responsive: (
   text-transform: none;
 }
 // Typography colors
-.text-brand-gold{
+.text-gold-lightest{
   color: #D5B16C;
+}
+.text-gold-light{
+  color: #D5B16C;
+}
+.text-gold-brand{
+  color: #D5B16C;
+}
+
+.text-gold-dark{
+  color: #D5B16C;
+}
+.text-gold-darkest{
+  color: #D5B16C;
+}
+
+// background colors
+
+.bg-red-lightest{
+  background-color: #E40E20;
+}
+
+.bg-red-light{
+  background-color: #E40E20;
+}
+
+.bg-red-brand{
+  background-color: #E40E20;
+}
+
+.bg-red-dark{
+  background-color: #c41422;
+}
+
+.bg-red-darkest{
+  background-color: #E40E20;
 }

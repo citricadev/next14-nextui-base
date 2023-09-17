@@ -65,7 +65,7 @@ $border-extra-bold: "";
 // FONTS GOOGLE
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap);
 
-/* FONTS LOCALES */
+// FONTS LOCALES
 @font-face {
     font-family: "ChunkFiveEx";
     src: url('../../fonts/Chunkfive_Ex.ttf');
@@ -83,37 +83,6 @@ $border-extra-bold: "";
 $font-family-a: 'ChunkFiveEx';
 $font-family-b: 'Restora', sans-serif;
 $font-family-c: 'Poppins', sans-serif;
-
-$typography-display-lg: "";
-$typography-display-md: "";
-$typography-display-sm: "";
-$typography-heading-lg: "";
-$typography-heading-md: "";
-$typography-heading-sm: "";
-$typography-title-lg: "";
-$typography-title-md: "";
-$typography-title-sm: "";
-$typography-subtitle-lg: "";
-$typography-subtitle-md: "";
-$typography-subtitle-sm: "";
-$typography-button-lg: "";
-$typography-button-md: "";
-$typography-button-sm: "";
-$typography-body-bold-lg: "";
-$typography-body-bold-md: "";
-$typography-body-bold-sm: "";
-$typography-body-bold-italic-lg: "";
-$typography-body-bold-italic-md: "";
-$typography-body-bold-italic-sm: "";
-$typography-body-lg: "";
-$typography-body-md: "";
-$typography-body-sm: "";
-$typography-body-italic-lg: "";
-$typography-body-italic-md: "";
-$typography-body-italic-sm: "";
-$typography-label-lg: "";
-$typography-label-md: "";
-$typography-label-sm: "";
 
 // CITRICA SYSTEM OPACITY
 $opacity-1:"";
@@ -191,11 +160,6 @@ $root-vars: (
         --font-family-a: $font-family-a,
         --font-family-b: $font-family-b,
         --font-family-c: $font-family-c,
-        // FONT PROPERTIES
-        --copy-size: 12px,
-        --copy-height: 16px,
-        --display-size: 20px,
-        --display-height: 20px,
         // CUSTOM
     ),
     md: (
@@ -205,11 +169,6 @@ $root-vars: (
         --container-padding: $container-padding__md,
         --display-block-only-mobile: none,
         --display-block-not-mobile: block,
-       // FONT PROPERTIES
-       --copy-size: 14px,
-       --copy-height: 16px,
-       --display-size: 20px,
-       --display-height: 24px,
     ),
     lg: (
         // LAYOUT
@@ -221,11 +180,6 @@ $root-vars: (
         --font-size-h1: 100px,
         --font-size-h2: 90px,
         --line-height-h1: 102px,
-       // FONT PROPERTIES
-       --copy-size: 16px,
-       --copy-height: 16px,
-       --display-size: 30px,
-       --display-height: 30px,
     ),
     // Opcionales
     only-md: (

@@ -23,7 +23,7 @@ export default function Home() {
 			<section className="about-us">
 				<Container className="flex flex-col h-screen justify-between py-24">
 					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
-						<h2 className="headline text-brand-gold">
+						<h2 className="headline text-gold-brand">
 							Quiénes somos
 						</h2>
 					</Col>
@@ -45,7 +45,7 @@ export default function Home() {
 			<section className="history-section">
 				<Container className="py-24">
 					<Col cols={{ lg: 10, md: 6, sm: 4 }}>
-						<h2 className="headline text-brand-gold">
+						<h2 className="headline text-gold-brand">
 							Nuestra Historia
 						</h2>
 						<p className="copy text-white">
@@ -61,15 +61,15 @@ export default function Home() {
 			</section>
 			<section className="mision-vision">
 				<Container noPadding noLimit>
-					<Col cols={{ lg: 6, md: 6, sm: 4 }} className='bg-red-600'>
+					<Col cols={{ lg: 6, md: 6, sm: 4 }} className='bg-red-brand'>
 						<div className="p-20">
-							<h2 className="headline text-brand-gold">Mision</h2>
+							<h2 className="headline text-gold-brand">Mision</h2>
 							<p className="title text-white py-10">Ofrecer los mejores productos congelados y refrigerados para satisfacer las necesidades del mercado peruano.</p>
 						</div>
 					</Col>
 					<Col cols={{ lg: 6, md: 6, sm: 4 }} className='bg-white'>
 						<div className="p-20">
-							<h2 className="headline text-brand-gold">Vision</h2>
+							<h2 className="headline text-gold-brand">Vision</h2>
 							<p className="title py-10">Ser reconocidos como una empresa pionera en el desarrollo de productos alimenticios de la más alta calidad.</p>
 						</div>
 					</Col>
@@ -78,7 +78,7 @@ export default function Home() {
 			<section className="our-companies">
 				<Container>
 					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
-						<h2 className="headline text-brand-gold pt-24">Nuestras Empresas</h2>
+						<h2 className="headline text-gold-brand pt-24">Nuestras Empresas</h2>
 					</Col>
 				</Container>
 				<Container className="pb-24">
@@ -125,7 +125,7 @@ export default function Home() {
 			<section className="our-brands" >
 				<Container>
 					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
-						<h2 className="headline text-brand-gold">Nuestras Marcas</h2>
+						<h2 className="headline text-gold-brand">Nuestras Marcas</h2>
 					</Col>
 				</Container>
 				<Container>
