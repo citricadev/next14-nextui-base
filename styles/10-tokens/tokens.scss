@@ -28,8 +28,8 @@ $display-responsive: (
       line-height: 22px
   ),
   md: (
-    font-size: 45px,
-    line-height: 50px
+    font-size: 56px,
+    line-height: 66px
   ),
   lg: (
     font-size: 56px,
@@ -51,12 +51,12 @@ $headline-responsive: (
       line-height: 22px
   ),
   md: (
-    font-size: 45px,
-    line-height: 50px
+    font-size: 64px,
+    line-height: 72px
   ),
   lg: (
-    font-size: 56px,
-    line-height: 66px
+    font-size: 64px,
+    line-height: 72px
   )
 );
 
@@ -78,8 +78,8 @@ $title-responsive: (
     line-height: 37px
   ),
   lg: (
-    font-size: 32px,
-    line-height: 40px
+    font-size: 21px,
+    line-height: 37px
   )
 );
 .title {
@@ -118,12 +118,12 @@ $label-responsive: (
       line-height: 22px
   ),
   md: (
-    font-size: 14pt,
-    line-height: 22px
+    font-size: 12pt,
+    line-height: 16px
   ),
   lg: (
-    font-size: 14pt,
-    line-height: 22px
+    font-size: 12pt,
+    line-height: 16px
   )
 );
 .label {
@@ -164,30 +164,29 @@ $label-responsive: (
 }
 // Typography colors
 .text-gold-lightest{
-  color: #D5B16C;
+  color: #F4EAD7;
 }
 .text-gold-light{
-  color: #D5B16C;
+  color: #E8D5B0;
 }
 .text-gold-brand{
   color: #D5B16C;
 }
-
 .text-gold-dark{
-  color: #D5B16C;
+  color: #A38243;
 }
 .text-gold-darkest{
-  color: #D5B16C;
+  color: #4F3C17;
 }
 
 // background colors
 
 .bg-red-lightest{
-  background-color: #E40E20;
+  background-color: #FDD9DC;
 }
 
 .bg-red-light{
-  background-color: #E40E20;
+  background-color: #F55764;
 }
 
 .bg-red-brand{
@@ -195,11 +194,11 @@ $label-responsive: (
 }
 
 .bg-red-dark{
-  background-color: #c41422;
+  background-color: #A30A17;
 }
 
 .bg-red-darkest{
-  background-color: #E40E20;
+  background-color: #48040A;
 }
 
 .bg-black-brand{
