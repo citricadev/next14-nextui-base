@@ -17,7 +17,7 @@ export default function Home() {
 							src="/img/logo-corporacion-jordi.png"
 							alt="logo" />
 						<h2 className="display text-white">
-							Exportacion, importacion y distribucion de carnes y menudencias
+							Exportacion, importacion <br />y distribucion de carnes <br />y menudencias
 						</h2>
 					</Col>
 				</Container>
