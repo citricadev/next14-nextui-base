@@ -7,6 +7,9 @@ import Navbar from "@/components/citrica-ui/navbar";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 import Footer from "@/components/citrica-ui/footer";
+import HeaderCUI from "@/components/citrica-ui/header";
+import NavbarCUI from "@/components/citrica-ui/navbar";
+
 
 export const metadata: Metadata = {
 	title: {
