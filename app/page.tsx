@@ -62,17 +62,17 @@ export default function Home() {
 				</Container>
 			</section>
 			<section className="mision-vision">
-				<Container noPadding noLimit>
-					<Col cols={{ lg: 6, md: 6, sm: 4 }} className='bg-red-brand'>
-						<div className="p-20">
+				<Container noPadding>
+					<Col cols={{ lg: 6, md: 6, sm: 4 }} className="mision-vision-item-left">
+						<div>
 							<h2 className="headline text-gold-brand">Mision</h2>
-							<p className="title text-white py-10">Ofrecer los mejores productos congelados y refrigerados para satisfacer las necesidades del mercado peruano.</p>
+							<p className="title text-white">Ofrecer los mejores productos congelados y refrigerados para satisfacer las necesidades del mercado peruano.</p>
 						</div>
 					</Col>
-					<Col cols={{ lg: 6, md: 6, sm: 4 }} className='bg-white'>
-						<div className="p-20">
+					<Col cols={{ lg: 6, md: 6, sm: 4 }}>
+						<div>
 							<h2 className="headline text-gold-brand">Vision</h2>
-							<p className="title py-10">Ser reconocidos como una empresa pionera en el desarrollo de productos alimenticios de la más alta calidad.</p>
+							<p className="title">Ser reconocidos como una empresa pionera en el desarrollo de productos alimenticios de la más alta calidad.</p>
 						</div>
 					</Col>
 				</Container>
