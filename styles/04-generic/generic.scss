@@ -11,6 +11,9 @@
 .no-padding {
     padding: 0 !important;
 }
+.no-width-limit {
+  width: auto !important;
+}
 
 // INPUT
 input:focus { 
@@ -55,14 +58,11 @@ textarea:focus {
     background-color: var(--color-primary);
 }
 
-.title-text{
-    @include a-set($title-text);
-}
 
-.title-description{
-    margin-top:0px;
-    @include a-set($title-description);
-}
+// .title-description{
+//     margin-top:0px;
+//     @include a-set($title-description);
+// }
 
 
 .modal__bg {

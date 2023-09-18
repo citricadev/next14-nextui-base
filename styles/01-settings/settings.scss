@@ -6,20 +6,47 @@
 // COLORS
 
 // CITRICA SYSTEM COLORS
-$color-primary-black: #443C1D;
-$color-primary-dark: #87783A;
-$color-primary: #C0AF6D;
-$color-primary-light: #D4C89B;
-$color-primary-white: #FCFBF8;
-$color-secondary: #0B2037;
-$color-secondary-dark: #1C528C;
-$color-secondary-mid: #3783D7;
-$color-secondary-light: #D4E5F7;
-$color-secondary-white: #F2F7FC;
+// $color-primary-black: #443C1D;
+// $color-primary-dark: #87783A;
+// $color-primary: #C0AF6D;
+// $color-primary-light: #D4C89B;
+// $color-primary-white: #FCFBF8;
+// $color-secondary: #0B2037;
+// $color-secondary-dark: #1C528C;
+// $color-secondary-mid: #3783D7;
+// $color-secondary-light: #D4E5F7;
+// $color-secondary-white: #F2F7FC;
+
+$color-primary-lightest: “”;
+$color-primary-light: “”;
+$color-primary: #D5B16C;
+$color-primary-dark: “”;
+$color-primary-darkest: “”;
+
+$color-secondary-lightest: “”;
+$color-secondary-light: “”;
+$color-secondary: #D5B16C;
+$color-secondary-dark: #A38243;
+$color-secondary-darkest: “”;
+
+$color-tertiary-lightest: “”;
+$color-tertiary-light: “”;
+$color-tertiary: #FCBF00;
+$color-tertiary-dark: “”;
+$color-tertiary-darkest: “”;
+
+$color-white: #FFFFFF;
+$color-black: #1D1D1B;
+
+$color-neutral-lightest: “”;
+$color-neutral-light: #EDEDED;
+$color-neutral-mid: “”;
+$color-neutral-dark: “”;
+$color-neutral-darkest: “”;
 //-------------------------------
 // FALTAN DEFINIR SI VAN O NO
-$color-white : #FFFFFF;
-$color-black : #353535;
+// $color-white : #FFFFFF;
+// $color-black : #353535;
 
 // CITRICA SYSTEM BORDER RADIOUS
 $border-radious-xsm: "";
@@ -35,44 +62,27 @@ $border-md: "";
 $border-bold: "";
 $border-extra-bold: "";
 
-$font-a : 'Girassol', cursive;
-$font-b : 'Lato', sans-serif;
+// FONTS GOOGLE
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap);
+
+// FONTS LOCALES
+@font-face {
+    font-family: "ChunkFiveEx";
+    src: url('../../fonts/Chunkfive_Ex.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Restora";
+    src: url('../../fonts/RestoraExtraLight.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
 // CITRICA SYSTEM TYPOGRAPJY
-$font-family-a: 'Lato', sans-serif;
-$font-family-b: 'Girassol', cursive;
-$font-family-c: "";
-
-$typography-display-lg: "";
-$typography-display-md: "";
-$typography-display-sm: "";
-$typography-heading-lg: "";
-$typography-heading-md: "";
-$typography-heading-sm: "";
-$typography-title-lg: "";
-$typography-title-md: "";
-$typography-title-sm: "";
-$typography-subtitle-lg: "";
-$typography-subtitle-md: "";
-$typography-subtitle-sm: "";
-$typography-button-lg: "";
-$typography-button-md: "";
-$typography-button-sm: "";
-$typography-body-bold-lg: "";
-$typography-body-bold-md: "";
-$typography-body-bold-sm: "";
-$typography-body-bold-italic-lg: "";
-$typography-body-bold-italic-md: "";
-$typography-body-bold-italic-sm: "";
-$typography-body-lg: "";
-$typography-body-md: "";
-$typography-body-sm: "";
-$typography-body-italic-lg: "";
-$typography-body-italic-md: "";
-$typography-body-italic-sm: "";
-$typography-label-lg: "";
-$typography-label-md: "";
-$typography-label-sm: "";
+$font-family-a: 'ChunkFiveEx';
+$font-family-b: 'Restora', sans-serif;
+$font-family-c: 'Poppins', sans-serif;
 
 // CITRICA SYSTEM OPACITY
 $opacity-1:"";
@@ -89,36 +99,6 @@ $elevation-level-4: "";
 $elevation-level-5: "";
 
 //--------------
-
-
-$title-text: (
-    sm: (
-        font-size: 40px,
-        font-family: $font-a,
-        font-weight: 400,
-    ),
-    md: (
-        font-size: 40px,
-    ),
-    lg: (
-        font-size: 50px,
-    )
-);
-
-$title-description: (
-    sm: (
-        font-size: 18px,
-        font-family: $font-a,
-        font-weight: 200,
-    ),
-    md: (
-        font-size: 24px,
-    ),
-    lg: (
-        font-size: 28px,
-        line-height: 30px
-    )
-);
 
 $text-btns: (
     sm: (
@@ -173,31 +153,14 @@ $root-vars: (
         --color-white: $color-white,
         --color-black: $color-black,
         --color-primary: $color-primary,
-        --color-primary-black: $color-primary-black,
+        // --color-primary-black: $color-primary-black,
         --color-primary-dark: $color-primary-dark,
         --color-secondary: $color-secondary,
         // FONTS
-        --font-family: $font-a,
-        --font-a: $font-a,
-        --font-b: $font-b,
+        --font-family-a: $font-family-a,
+        --font-family-b: $font-family-b,
+        --font-family-c: $font-family-c,
         // CUSTOM
-        --a-transition: $a-transition,
-        --line-height-h1: 50px,
-        --cover-height: 'auto',
-        --cover-title-padding-top: 20px,
-        --cover-title-padding-right: 0px,
-        --cover-title-img-width: 70%,
-        --box-send-padding: 35px 3%,
-        --box-send-margin: 0 4%,
-        --section-3-padding: 0,
-        --section-4-padding: 0,
-        --footer-flex-direction: column,
-        --footer-align-items: center,
-        --pre-title-font-size: 16px,
-        --title-send-font-size: 36px,
-        --box-noticias-margin-left: 2%,
-        --box-noticias-margin-right: 2%,
-        --font-size-h2: 50px,
     ),
     md: (
         // LAYOUT
@@ -206,23 +169,6 @@ $root-vars: (
         --container-padding: $container-padding__md,
         --display-block-only-mobile: none,
         --display-block-not-mobile: block,
-       // PADDING SECTIONS
-       --line-height-h1: 70px,
-       --cover-height: 'auto',
-       --cover-title-padding-top: 50px,
-       --cover-title-padding-right: 40%,
-       --cover-title-img-width: 80%,
-       --box-send-padding: 35px 6%,
-       --box-send-margin: 0 25%,
-       --section-3-padding: 100px 10%,
-       --section-4-padding: 0 10%,
-       --footer-flex-direction: row,
-       --footer-align-items:flex-end,
-       --pre-title-font-size: 24px,
-       --title-send-font-size: 46px,
-       --box-noticias-margin-left: 10%,
-       --box-noticias-margin-right: 10%,
-       --font-size-h2: 60px,
     ),
     lg: (
         // LAYOUT
@@ -234,23 +180,6 @@ $root-vars: (
         --font-size-h1: 100px,
         --font-size-h2: 90px,
         --line-height-h1: 102px,
-       // PADDING SECTIONS
-       --section-carousel-padding: 80px 80px 80px 100px,
-       --section-carousel-padding-left: 80px,
-       --cover-height: 100vh,
-       --cover-title-padding-top: 200px,
-       --cover-title-padding-right: 0px,
-       --cover-title-img-width: initial,
-       --box-send-padding: 35px 8%,
-       --box-send-margin: 0 25%,
-       --section-3-padding: 100px 10%,
-       --section-4-padding: 0 10%,
-       --footer-flex-direction: row,
-       --footer-align-items: flex-end,
-       --pre-title-font-size: 24px,
-       --title-send-font-size: 46px,
-       --box-noticias-margin-left: 11.5625rem,
-       --box-noticias-margin-right: 12.5rem,
     ),
     // Opcionales
     only-md: (

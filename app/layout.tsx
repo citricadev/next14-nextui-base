@@ -42,14 +42,9 @@ export default function RootLayout({
 					fontSans.variable
 				)}
 			>
-				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-					<div className="flex flex-col">
-						<header className="bg-[url('/ScreenShot2023-08-04.png')] h-[982px] bg-center flex flex-col ">
-						<NavbarCUI/> 
-						
-						<HeaderCUI/>
-						
-						</header>
+				<Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
+					<div className="relative flex flex-col h-screen">
+						<Navbar />
 						<main>
 							{children}
 						</main>

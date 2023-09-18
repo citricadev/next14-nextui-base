@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames';
 
-export const Container = ({className = '', noPadding = false, children}) => {
+export const Container = ({className = '', noPadding = false, noLimit=false, children}) => {
 
     const arrayClasses = [
         { [`${className}`] : className},
@@ -11,7 +11,11 @@ export const Container = ({className = '', noPadding = false, children}) => {
     if (noPadding){
         arrayClasses.push('no-padding')
     }
-    
+
+    if (noLimit){
+        arrayClasses.push('no-width-limit');
+    }
+
     let classes = classNames(arrayClasses);
 
     return (
@@ -24,7 +28,7 @@ export const Col = ({cols, noPadding=false, className="", children}) => {
 
     const arrayClasses = [
         { [`o-col-${lg}@lg`] : lg},
-        { [`o-col-push-${lg}@lg`] : lgPush},
+        { [`o-col-push-${lgPush}@lg`] : lgPush},
         { [`o-col-${md}@md`] : md},
         { [`o-col-push-${mdPush}@md`] : mdPush},
         { [`o-col-${sm}@sm`] : sm},
@@ -36,7 +40,7 @@ export const Col = ({cols, noPadding=false, className="", children}) => {
     }
     
     if (noPadding){
-        arrayClasses.push('no-padding')
+        arrayClasses.push('no-padding');
     }
 
     let classes = classNames(arrayClasses);

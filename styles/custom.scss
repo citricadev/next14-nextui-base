@@ -1,0 +1,44 @@
+$sections-paddings: (
+  sm: (
+    padding:24px,
+  ),
+  md: (
+    padding: 50px,
+  ),
+  lg: (
+    padding: 60px,
+  )
+);
+
+.hero-section{
+  background: url('../public/img/herohero-bg.jpg') #1D1D1B no-repeat center;
+  background-size: cover;
+}
+.about-us{
+  background: url('../public/img/about-us-video-cover.jpg') #FFF no-repeat center;
+  background-size: cover;
+  @include a-set($sections-paddings);
+}
+.history-section, .our-companies{
+  background: url('../public/img/history-bg.jpg') #1D1D1B no-repeat top;
+  background-size: cover;
+  @include a-set($sections-paddings);
+}
+
+.our-brands{
+  background-color: #EDEDED;
+  @include a-set($sections-paddings);
+}
+
+.our-partners{
+  @include a-set($sections-paddings);
+}
+
+.contact-section{
+  background: url('../public/img/contact-bg.jpg') #1D1D1B no-repeat center;
+  background-size: cover;
+}
+
+.platforms{
+  @include a-set($sections-paddings);
+}

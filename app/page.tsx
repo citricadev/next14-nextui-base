@@ -1,45 +1,215 @@
-import NextLink from "next/link";
-import { Link } from "@nextui-org/link";
-import { Snippet } from "@nextui-org/snippet";
-import { Code } from "@nextui-org/code"
-import { button as buttonStyles } from "@nextui-org/theme";
-import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
-import { Container, Col } from "@citrica/objects"
+import { Container, Col } from "@citrica/objects";
+import Image from "next/image";
+import Timeline from "@/components/timeline";
+import Card from "@/components/citrica-ui/card";
+import Platforms from "@/components/platforms";
 
 export default function Home() {
 	return (
-		<section>
-			<div className="bg-lime-400">
-				<Container className="flex flex-row h-36 justify-around items-center">
-					<h1 className="display">HERO BANER</h1>
-					<h2>Tagline</h2>
+		<>
+			<section className="hero-section">
+				<Container className="flex flex-col h-screen justify-center">
+					<Col cols={{ lg: 8, md: 6, sm: 4 }}>
+						<Image
+							className="mb-10"
+							width={257}
+							height={117}
+							src="/img/logo-corporacion-jordi.png"
+							alt="logo" />
+						<h2 className="display text-white">
+							Exportacion, importacion y distribucion de carnes y menudencias
+						</h2>
+					</Col>
 				</Container>
-			</div>
-			<Container className="bg-black text-white bg-">
-				<Col cols={{ lg: 4, md: 6, sm: 4 }}>
-					<h3 className="display">Header 3</h3>
-				</Col>
-				<Col cols={{ lg: 4, md: 6, sm: 4 }}>
-					<h2>Header 3</h2>
-				</Col>
-				<Col cols={{ lg: 4, md: 6, sm: 4 }}>
-					<h1 className="display">Header 1</h1>
-				</Col>
-			</Container>
-			<Container className="bg-yellow-300">
-				<Col cols={{ lg: 12, md: 6, sm: 4 }}>
-					<div>
-						Otra Fila
-					</div>
-				</Col>
-			</Container>
-			<Container>
-				<Col cols={{ lg: 12, md: 6, sm: 4 }} className="flex flex-1 justify-center items-center h-screen bg-slate-300">
-					<h1> TEXT CENTER </h1>
-				</Col>
-			</Container>
-		</section>
+			</section>
+			<section className="about-us">
+				<Container className="flex flex-col h-screen justify-between">
+					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
+						<h2 className="headline text-gold-brand">
+							Quiénes somos
+						</h2>
+					</Col>
+					<Col cols={{ lg: 12, md: 6, sm: 4 }} className="flex flex-row justify-center">
+						<button className="flex flex-col items-center">
+							<Image
+								className="mb-4"
+								width={257}
+								height={117}
+								src="/img/play_circleplay-btn.png"
+								alt="logo" />
+							<h2 className="title">
+								Ver video
+							</h2>
+						</button>
+					</Col>
+				</Container>
+			</section>
+			<section className="history-section">
+				<Container>
+					<Col cols={{ lg: 10, md: 6, sm: 4 }}>
+						<h2 className="headline text-gold-brand">
+							Nuestra Historia
+						</h2>
+						<p className="copy text-white">
+							Nuestro desarrollo organizacional se ha basado en escalar durante estos años el mercado peruano, y dar pasos agigantados con una nueva visión de hacer empresa, nuestro mayor logro ha sido representar a muchos emprendedores que empezaron con un sueño, y que con su esfuerzo rindieron frutos, aquí les compartimos nuestra historia.
+						</p>
+					</Col>
+				</Container>
+				<Container>
+					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
+						<Timeline />
+					</Col>
+				</Container>
+			</section>
+			<section className="mision-vision">
+				<Container noPadding noLimit>
+					<Col cols={{ lg: 6, md: 6, sm: 4 }} className='bg-red-brand'>
+						<div className="p-20">
+							<h2 className="headline text-gold-brand">Mision</h2>
+							<p className="title text-white py-10">Ofrecer los mejores productos congelados y refrigerados para satisfacer las necesidades del mercado peruano.</p>
+						</div>
+					</Col>
+					<Col cols={{ lg: 6, md: 6, sm: 4 }} className='bg-white'>
+						<div className="p-20">
+							<h2 className="headline text-gold-brand">Vision</h2>
+							<p className="title py-10">Ser reconocidos como una empresa pionera en el desarrollo de productos alimenticios de la más alta calidad.</p>
+						</div>
+					</Col>
+				</Container>
+			</section>
+			<section className="our-companies">
+				<Container>
+					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
+						<h2 className="headline text-gold-brand mb-16">Nuestras Empresas</h2>
+					</Col>
+				</Container>
+				<Container className="pb-24">
+					<Col cols={{ lg: 4, md: 6, sm: 4 }}>
+						<div className="pt-10">
+							<Image
+								src={"/img/jds-food-logo.png"}
+								width={102}
+								height={62}
+								alt="jordi logo"
+							/>
+							<p className="copy text-white mt-10"> Broker internacional Líder en el desarrollo y mejoramiento de productos alimenticios congelados y refrigerados, de la mano con empresas americanas. Fue fundada el 2015 en New Jersey, Usa. Exporta diferentes productos bajo minuciosos procesos a diferentes países de Latinoamérica, principalmente al Perú.
+							</p>
+						</div>
+					</Col>
+					<Col cols={{ lg: 4, md: 6, sm: 4 }}>
+						<div className="pt-10">
+							<Image
+								src={"/img/jordi-logo.png"}
+								width={102}
+								height={62}
+								alt="jordi logo"
+							/>
+							<p className="copy text-white mt-10">
+								Importación, distribución, y procesado de carnes angus americana y uruguaya, productos premium procesados y venta de vinos, licores e implementos  para la parrilla.
+							</p>
+						</div>
+					</Col>
+					<Col cols={{ lg: 4, md: 6, sm: 4 }}>
+						<div className="pt-10">
+							<Image
+								src={"/img/hollyfood-logo.png"}
+								width={102}
+								height={62}
+								alt="jordi logo"
+							/>
+							<p className="copy text-white mt-10">
+								1er restaurante temático, interactivo y dinámico de comida americana en Peru
+							</p>
+						</div>
+					</Col>
+				</Container>
+			</section>
+			<section className="our-brands" >
+				<Container>
+					<Col cols={{ lg: 12, md: 6, sm: 4 }} className="mb-16">
+						<h2 className="headline text-gold-brand">Nuestras Marcas</h2>
+					</Col>
+				</Container>
+				<Container>
+					<Col cols={{ lg: 3, md: 3, sm: 4 }} className="center mb-14">
+						<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo"/>
+					</Col>
+					<Col cols={{ lg: 3, md: 3, sm: 4 }} className="center mb-14">
+						<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo"/>
+					</Col>
+					<Col cols={{ lg: 3, md: 3, sm: 4 }} className="center mb-14">
+						<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo"/>
+					</Col>
+					<Col cols={{ lg: 3, md: 3, sm: 4 }} className="center mb-14">
+						<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo"/>
+					</Col>
+				</Container>
+				<Container>
+					<Col cols={{ lgPush:2, lg:8, md: 6, sm: 4 }}>
+						<Container noPadding>
+							<Col cols={{ lg: 4, md: 2, sm: 4 }} className="center mb-14">
+								<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo"/>
+							</Col>
+							<Col cols={{ lg: 4, md: 2, sm: 4 }} className="center mb-14">
+								<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo"/>
+							</Col>
+							<Col cols={{ lg: 4, md: 2, sm: 4 }} className="center mb-14">
+								<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo"/>
+							</Col>
+						</Container>
+					</Col>
+				</Container>
+			</section>
+			<section className="our-partners">
+				<Container>
+					<Col cols={{ lg: 12, md: 6, sm: 4 }} >
+						<h2 className="headline text-gold-brand">Nuestros socios estratégicos</h2>
+					</Col>
+				</Container>
+				<Container>
+					<Col cols={{ lg: 6, md: 6, sm: 4 }} >
+						<div className="h-44 flex flex-col-reverse">
+							<picture>
+								<img src={'/img/greater-omaha-logo.png'} alt="Grater Omaha logo"/>
+							</picture>
+						</div>
+						<p className="copy py-5">Greater Omaha es una empresa estadounidense ubicada en Omaha, Nebraska especializada en la producción de carne de res premium </p>
+					</Col>
+					<Col cols={{ lg: 6, md: 6, sm: 4 }} >
+						<div className="h-44 flex flex-col-reverse">
+							<picture>
+								<img src={'/img/somave-logo.png'} alt="Somave logo"/>
+							</picture>
+						</div>
+						<p className="copy py-5">Grater Omaha es una empresa estadounidense ubicada en Omaha, Nebraska especializada en la producción de carne de res premium </p>
+					</Col>
+				</Container>
+			</section>
+			<section className="contact-section">
+				<Container>
+					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
+						<div className="h-96 flex flex-col justify-center">
+							<h2 className="headline text-gold-brand">Contáctanos</h2>
+							<div className="flex flex-row">
+								<span>icon</span>
+								<span>946 351 770</span>
+								<span>icon</span>
+								<span>info@corporacionjordi.com</span>
+							</div>
+						</div>
+					</Col>
+				</Container>
+			</section>
+			<section className="platforms">
+				<Container>
+					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
+						<h2 className="headline text-gold-brand">Plataformas</h2>
+					</Col>
+				</Container>
+				<Container>
+					<Platforms/>
+				</Container>
+			</section>
+		</>
 	);
 }
