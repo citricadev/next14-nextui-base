@@ -61,7 +61,7 @@ export default function Home() {
 					</Col>
 				</Container>
 			</section>
-			<section className="mision-vision">
+			<section id="mision-vision" className="mision-vision">
 				<Container noPadding>
 					<Col cols={{ lg: 6, md: 6, sm: 4 }} className="mision-vision-item-left">
 						<div>
