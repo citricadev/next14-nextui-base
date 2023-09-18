@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, NavbarMenuToggle, NavbarMenuItem, NavbarMenu} from "@nextui-org/react";
+import { Container } from "@/styles/07-objects/objects";
 
 
 export default function NavbarCUI() {
@@ -33,4 +34,3 @@ export default function NavbarCUI() {
   )
 }
 
-export default NavbarCUI
