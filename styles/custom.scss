@@ -30,6 +30,42 @@ $sections-paddings: (
   @include a-set($sections-paddings);
 }
 
+$mision-vision-bg:(
+  sm: (
+    background:none,
+  ),
+  md: (
+    background:none,
+  ),
+  lg: (
+    background: linear-gradient(
+      to right,
+      #E40E20 0%,
+      #E40E20 50%,
+      white 50%,
+      white 100%
+    )
+  )
+);
+$mision-vision-bg-left: (
+  sm: (
+    background:#E40E20,
+  ),
+  md: (
+    background:#E40E20,
+  ),
+  lg: (
+    background: none,
+  )
+);
+.mision-vision{
+  @include a-set($mision-vision-bg);
+  @include a-set($sections-paddings);
+  &-item-left {
+    @include a-set($mision-vision-bg-left);
+  }
+}
+
 .our-partners{
   @include a-set($sections-paddings);
 }
