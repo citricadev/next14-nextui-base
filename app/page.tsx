@@ -7,7 +7,7 @@ import Platforms from "@/components/platforms";
 export default function Home() {
 	return (
 		<>
-			<section className="hero-section">
+			<section id="hero-section" className="hero-section">
 				<Container className="flex flex-col h-screen justify-center">
 					<Col cols={{ lg: 8, md: 6, sm: 4 }}>
 						<Image
@@ -22,7 +22,7 @@ export default function Home() {
 					</Col>
 				</Container>
 			</section>
-			<section className="about-us">
+			<section id="about-us" className="about-us">
 				<Container className="flex flex-col h-screen justify-between">
 					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
 						<h2 className="headline text-gold-brand">
@@ -44,7 +44,7 @@ export default function Home() {
 					</Col>
 				</Container>
 			</section>
-			<section className="history-section">
+			<section id="history-section" className="history-section">
 				<Container>
 					<Col cols={{ lg: 10, md: 6, sm: 4 }}>
 						<h2 className="headline text-gold-brand">
@@ -61,7 +61,7 @@ export default function Home() {
 					</Col>
 				</Container>
 			</section>
-			<section className="mision-vision">
+			<section id="mision-vision" className="mision-vision">
 				<Container noPadding noLimit>
 					<Col cols={{ lg: 6, md: 6, sm: 4 }} className='bg-red-brand'>
 						<div className="p-20">
@@ -77,7 +77,7 @@ export default function Home() {
 					</Col>
 				</Container>
 			</section>
-			<section className="our-companies">
+			<section id="our-companies" className="our-companies">
 				<Container>
 					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
 						<h2 className="headline text-gold-brand mb-16">Nuestras Empresas</h2>
@@ -124,7 +124,7 @@ export default function Home() {
 					</Col>
 				</Container>
 			</section>
-			<section className="our-brands" >
+			<section id="our-brands" className="our-brands" >
 				<Container>
 					<Col cols={{ lg: 12, md: 6, sm: 4 }} className="mb-16">
 						<h2 className="headline text-gold-brand">Nuestras Marcas</h2>
@@ -160,7 +160,7 @@ export default function Home() {
 					</Col>
 				</Container>
 			</section>
-			<section className="our-partners">
+			<section id="our-partners" className="our-partners">
 				<Container>
 					<Col cols={{ lg: 12, md: 6, sm: 4 }} >
 						<h2 className="headline text-gold-brand">Nuestros socios estratégicos</h2>
@@ -185,7 +185,7 @@ export default function Home() {
 					</Col>
 				</Container>
 			</section>
-			<section className="contact-section">
+			<section id="contact-section" className="contact-section">
 				<Container>
 					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
 						<div className="h-96 flex flex-col justify-center">
@@ -200,7 +200,7 @@ export default function Home() {
 					</Col>
 				</Container>
 			</section>
-			<section className="platforms">
+			<section id="platforms" className="platforms">
 				<Container>
 					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
 						<h2 className="headline text-gold-brand">Plataformas</h2>
