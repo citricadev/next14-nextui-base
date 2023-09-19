@@ -116,29 +116,29 @@ export default function Home() {
 				</Container>
 				<Container>
 					<Col cols={{ lg: 3, md: 3, sm: 4 }} className="center mb-14">
-						<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo"/>
+						<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo" />
 					</Col>
 					<Col cols={{ lg: 3, md: 3, sm: 4 }} className="center mb-14">
-						<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo"/>
+						<Image width={194} height={165} src={'/img/premium-black-angus.png'} alt="angus logo" />
 					</Col>
 					<Col cols={{ lg: 3, md: 3, sm: 4 }} className="center mb-14">
-						<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo"/>
+						<Image width={194} height={165} src={'/img/sur-meat-cow.png'} alt="angus logo" />
 					</Col>
 					<Col cols={{ lg: 3, md: 3, sm: 4 }} className="center mb-14">
-						<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo"/>
+						<Image width={194} height={165} src={'/img/american-golden-pork.png'} alt="angus logo" />
 					</Col>
 				</Container>
 				<Container>
-					<Col cols={{ lgPush:2, lg:8, md: 6, sm: 4 }}>
+					<Col cols={{ lgPush: 2, lg: 8, md: 6, sm: 4 }}>
 						<Container noPadding>
 							<Col cols={{ lg: 4, md: 2, sm: 4 }} className="center mb-14">
-								<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo"/>
+								<Image width={194} height={165} src={'/img/sur-meat-pork.png'} alt="angus logo" />
+							</Col>
+							<Col cols={{ lg: 4, md: 2, sm: 4 }} className="flex justify-center items-center mb-14">
+								<Image width={194} height={165} src={'/img/hollyfood.png'} alt="angus logo" />
 							</Col>
 							<Col cols={{ lg: 4, md: 2, sm: 4 }} className="center mb-14">
-								<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo"/>
-							</Col>
-							<Col cols={{ lg: 4, md: 2, sm: 4 }} className="center mb-14">
-								<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo"/>
+								<Image width={194} height={165} src={'/img/blanqui-roja.png'} alt="angus logo" />
 							</Col>
 						</Container>
 					</Col>
@@ -154,7 +154,7 @@ export default function Home() {
 					<Col cols={{ lg: 6, md: 6, sm: 4 }} >
 						<div className="h-44 flex flex-col-reverse">
 							<picture>
-								<img src={'/img/greater-omaha-logo.png'} alt="Grater Omaha logo"/>
+								<img src={'/img/greater-omaha-logo.png'} alt="Grater Omaha logo" />
 							</picture>
 						</div>
 						<p className="copy py-5">Greater Omaha es una empresa estadounidense ubicada en Omaha, Nebraska especializada en la producción de carne de res premium </p>
@@ -162,7 +162,7 @@ export default function Home() {
 					<Col cols={{ lg: 6, md: 6, sm: 4 }} >
 						<div className="h-44 flex flex-col-reverse">
 							<picture>
-								<img src={'/img/somave-logo.png'} alt="Somave logo"/>
+								<img src={'/img/somave-logo.png'} alt="Somave logo" />
 							</picture>
 						</div>
 						<p className="copy py-5">Grater Omaha es una empresa estadounidense ubicada en Omaha, Nebraska especializada en la producción de carne de res premium </p>
@@ -174,11 +174,19 @@ export default function Home() {
 					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
 						<div className="h-96 flex flex-col justify-center">
 							<h2 className="headline text-gold-brand">Contáctanos</h2>
-							<div className="flex flex-row">
-								<span>icon</span>
-								<span>946 351 770</span>
-								<span>icon</span>
-								<span>info@corporacionjordi.com</span>
+							<div className="flex gap-[32px] flex-row flex-wrap">
+								<span className="flex  text-white gap-[16px] items-center ">
+									<picture>
+										<img src={'/img/call.svg'} alt="call logo" />
+									</picture>
+									946 351 770
+								</span>
+								<span className="flex  text-white gap-[16px] items-center">
+									<picture>
+										<img src={'/img/mail.svg'} alt="mail logo" />
+									</picture>
+									info@corporacionjordi.com
+								</span>
 							</div>
 						</div>
 					</Col>
@@ -191,7 +199,7 @@ export default function Home() {
 					</Col>
 				</Container>
 				<Container>
-					<Platforms/>
+					<Platforms />
 				</Container>
 			</section>
 		</>
