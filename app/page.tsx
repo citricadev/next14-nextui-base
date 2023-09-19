@@ -48,13 +48,13 @@ export default function Home() {
 			<section id="mision-vision" className="mision-vision">
 				<Container noPadding>
 					<Col cols={{ lg: 6, md: 6, sm: 4 }} className="mision-vision-item-left">
-						<div>
+						<div className="py-6">
 							<h2 className="headline text-gold-brand">Mision</h2>
 							<p className="title text-white">Ofrecer los mejores productos congelados y refrigerados para satisfacer las necesidades del mercado peruano.</p>
 						</div>
 					</Col>
 					<Col cols={{ lg: 6, md: 6, sm: 4 }}>
-						<div>
+						<div className="pl-4 py-6">
 							<h2 className="headline text-gold-brand">Vision</h2>
 							<p className="title">Ser reconocidos como una empresa pionera en el desarrollo de productos alimenticios de la más alta calidad.</p>
 						</div>
