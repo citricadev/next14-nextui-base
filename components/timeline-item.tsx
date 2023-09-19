@@ -2,23 +2,26 @@ const TimelineItem = () => {
   return (
     <>
       <div className="relative center">
-        <div className="timeline-description timeline-description-tl2 w-full copy copy-bold">
+        <div className="timeline-description timeline-description-bl w-full copy copy-bold">
           <div>Inició la venta mayorista</div>
           <div>en menudencia <span className="text-gold-brand">BLANQUIROJA</span></div>
-        </div>
-        <div className="timeline-title timeline-title-tr w-full display text-gold-brand">
-          Corporación Jordi
         </div>
         <picture className="relative">
           <img src={'/img/timeline-item-start.svg'} alt="timeline item" />
         </picture>
         <div className="absolute top-20 w-full center">
-          <div>
-            Icono
-          </div>
+          <picture>
+            <img src={'/img/icons/factory.svg'} alt="timeline item" />
+          </picture>
           <h4 className="display text-gold-brand">
-            2022
+            1997
           </h4>
+        </div>
+        <div className="timeline-description timeline-description-tr w-full copy copy-bold">
+          <div>Fundación de <span className="text-gold-brand">CORPORACIÓN JORDI</span></div>
+        </div>
+        <div className="timeline-title timeline-title-right timeline-title-size-3 w-full text-gold-dark">
+          Corporación Jordi
         </div>
       </div>
       <div className="relative center">
@@ -30,11 +33,11 @@ const TimelineItem = () => {
           <img src={'/img/timeline-item.svg'} alt="timeline item" />
         </picture>
         <div className="absolute top-20 w-full center">
-          <div>
-            Icono
-          </div>
+          <picture>
+            <img src={'/img/icons/premium.svg'} alt="timeline item" />
+          </picture>
           <h4 className="display text-gold-brand">
-            2022
+            2000
           </h4>
         </div>
       </div>
@@ -47,11 +50,11 @@ const TimelineItem = () => {
           <img src={'/img/timeline-item.svg'} alt="timeline item" />
         </picture>
         <div className="absolute top-20 w-full center">
-          <div>
-            Icono
-          </div>
+          <picture>
+            <img src={'/img/icons/shelves.svg'} alt="timeline item" />
+          </picture>
           <h4 className="display text-gold-brand">
-            2022
+            2003
           </h4>
         </div>
       </div>

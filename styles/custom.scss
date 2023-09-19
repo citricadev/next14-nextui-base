@@ -84,18 +84,37 @@ $mision-vision-bg-left: (
 .timeline-title{
   position: absolute;
   width: 442px;
-  font-size: 40px;
-  &-tr{
+  font-family: var(--font-family-a);
+  &-size-1{
+    font-size: 24px;
+    top: 120px;
+  }
+  &-size-2{
+    font-size: 34px;
+    top: 120px;
+  }
+  &-size-3{
+    font-size: 44px;
+    top: 120px;
+  }
+  &-size-4{
+    font-size: 54px;
+    top: 120px;
+  }
+  &-right{
     text-align: left;
     left: 216px;
-    top: 120px;
+  }
+  &-left{
+    text-align: right;
+    right: 216px;
   }
 }
 
 .timeline-description{
   position: absolute;
   border-bottom: solid 1px #F00;
-  width: 298px;
+  width: 348px;
   color: #FFF;
   &-tl{
     text-align: left;
@@ -112,6 +131,11 @@ $mision-vision-bg-left: (
     left: 151px;
     top: 49px;
   }
+  &-tr2{
+    text-align: right;
+    left: 151px;
+    top: 26px;
+  }
   &-mr{
     text-align: right;
     left: 180px;
@@ -121,5 +145,10 @@ $mision-vision-bg-left: (
     text-align: right;
     left: 151px;
     top: 49px;
+  }
+  &-bl{
+    text-align: left;
+    right: 148px;
+    bottom: 20px;
   }
 }
