@@ -4,8 +4,7 @@ import Card from "./citrica-ui/card";
 
 const Platforms = () => {
   return (
-    <>
-        
+    <>        
       <Col className="flex items-stretch" cols={{ lg: 4, md: 3, sm: 4 }}>
         <Card
           imageUrl={'/img/jds-food-logo.png'}
