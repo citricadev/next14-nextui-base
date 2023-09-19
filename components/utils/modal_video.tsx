@@ -4,33 +4,35 @@
 "use client";
 import React from "react";
 
-import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
-
 export default function ModalVideo(props: { showModal: any; onClose: any; }) {
 
 	const { showModal, onClose } = props;
 
 	return (
 		<>
-			<Modal isOpen={showModal} onOpenChange={() => null}>
-				<ModalContent className="flex flex-col items-center bg-[rgba(23,29,27,0.9)] top-0 left-0 w-full p-4 z-50">
-					<ModalBody className=" top-0 left-0 w-full flex justify-center items-center bg-[rgba(0,0,0,0.5)] " >
-						<iframe
-							className=""
-							src={`https://www.youtube.com/embed/H8-Umg2T3p8`}
-							allow="acelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowFullScreen
-							title="youtube"
-						/>
-						<Button onPress={() => onClose()} className="flex justify-center">
-							<a className="" href="#">
-								Cerrar
-							</a>
-						</Button>
+			{
+				showModal && (
+					<div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-[rgba(0,0,0,0.5)]">
+						<div className="flex flex-col fixed bg-[#fffaf4] top-0 left-0 w-full h-full p-4 rounded-2xl z-10">
+							<div className="flex justify-end text-3xl z-20" >
+								<a onClick={() => onClose()} className="">
+									x
+								</a>
+							</div>
+							<div className="h-full flex justify-center items-center">
+								<iframe
+									className=" h-[480px] w-[854px]"
+									src={`https://www.youtube.com/embed/1rI8z07U50M`}
+									allow="acelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowFullScreen
+									title="youtube"
+								/>
+							</div>
+						</div>
+					</div>
+				)
+			}
 
-					</ModalBody>
-				</ModalContent>
-			</Modal>
 		</>
 	);
 }
