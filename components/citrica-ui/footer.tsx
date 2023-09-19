@@ -7,13 +7,13 @@ const FooterCUI = () => {
         <section className='flex justify-around w-screen h-[192px] items-center'>
 
           <div className="flex gap-[13px] flex-col flex-row flex-wrap">
-            <span className="flex justify-start text-white gap-[16px] items-center">
+            <span className="copy text-gray-brand flex justify-start text-white gap-[16px] items-center">
               <picture>
                 <img src={'/img/mail.svg'} alt="mail logo" />
               </picture>
               info@corporacionjordi.com
             </span>
-            <span className="flex justify-start text-white gap-[16px] items-center ">
+            <span className="copy text-gray-brand flex justify-start text-white gap-[16px] items-center ">
               <picture>
                 <img src={'/img/call.svg'} alt="call logo" />
               </picture>
@@ -32,9 +32,9 @@ const FooterCUI = () => {
                 <img className="h-8" src="img/face.svg" alt="face icon" />
               </Link>
             </div>
-            <span className="">
+            <span className="copy text-gray-brand">
               Corporación Jordi - 2023 © Copyrights.</span>
-            <span className="flex justify-end items-start">All rights reserved.</span>
+            <span className="copy text-gray-brand flex justify-end items-start">All rights reserved.</span>
           </div>
         </section>
 
