@@ -20,6 +20,9 @@ $copy-responsive: (
   text-decoration: none;
   text-transform: none;
   @include a-set($copy-responsive);
+  &-bold{
+    font-weight: 700;
+  }
 }
 
 $display-responsive: (
@@ -177,6 +180,22 @@ $label-responsive: (
 }
 .text-gold-darkest{
   color: #4F3C17;
+}
+
+.text-gray-lightest{
+  color: #B3B3B2; // FALTA DEFINIR
+}
+.text-gray-light{
+  color: #B3B3B2; // FALTA DEFINIR
+}
+.text-gray-brand{
+  color: #B3B3B2;
+}
+.text-gray-dark{
+  color: #B3B3B2; // FALTA DEFINIR
+}
+.text-gray-darkest{
+  color: #B3B3B2; // FALTA DEFINIR
 }
 
 // background colors
