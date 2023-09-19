@@ -3,10 +3,12 @@ import Image from "next/image";
 import Timeline from "@/components/timeline";
 import Card from "@/components/citrica-ui/card";
 import Platforms from "@/components/platforms";
+import Sectionvideo from "@/components/citrica-ui/sectionvideo";
 
 export default function Home() {
 	return (
 		<>
+			
 			<section id="hero-section" className="hero-section">
 				<Container className="flex flex-col h-screen justify-center">
 					<Col cols={{ lg: 8, md: 6, sm: 4 }}>
@@ -23,26 +25,7 @@ export default function Home() {
 				</Container>
 			</section>
 			<section id="about-us" className="about-us">
-				<Container className="flex flex-col h-screen justify-between">
-					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
-						<h2 className="headline text-gold-brand">
-							Quiénes somos
-						</h2>
-					</Col>
-					<Col cols={{ lg: 12, md: 6, sm: 4 }} className="flex flex-row justify-center">
-						<button className="flex flex-col items-center">
-							<Image
-								className="mb-4"
-								width={257}
-								height={117}
-								src="/img/play_circleplay-btn.png"
-								alt="logo" />
-							<h2 className="title">
-								Ver video
-							</h2>
-						</button>
-					</Col>
-				</Container>
+				<Sectionvideo/>
 			</section>
 			<section id="history-section" className="history-section">
 				<Container>
@@ -60,6 +43,7 @@ export default function Home() {
 						<Timeline />
 					</Col>
 				</Container>
+				
 			</section>
 			<section id="mision-vision" className="mision-vision">
 				<Container noPadding>
