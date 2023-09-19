@@ -32,7 +32,6 @@ export default function ModalVideo(props: { showModal: any; onClose: any; }) {
 					</div>
 				)
 			}
-
 		</>
 	);
 }
