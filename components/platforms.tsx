@@ -7,21 +7,25 @@ const Platforms = () => {
     <>
       <Col cols={{ lg: 4, md: 6, sm: 4 }}>
         <Card
-          imageUrl={'/img/greater-omaha-logo.png'}
+          imageUrl={'/img/jds-food-logo.png'}
           description={'Desarrollo y mejoramiento de productos alimenticios congelados y refrigerados'}
+          btnLabel={'Button'}
+          btnAction={() => console.log('BTN')}
         />
       </Col>
       <Col cols={{ lg: 4, md: 6, sm: 4 }}>
         <Card
-          imageUrl={'/img/greater-omaha-logo.png'}
-          description={'Desarrollo y mejoramiento de productos alimenticios congelados y refrigerados'}
+          imageUrl={'/img/jordi-logo.png'}
+          description={'Importación, distribución, y procesado de carnes angus americana y uruguaya, productos premium procesados y venta de vinos, licores e implementos  para la parrilla.'}
+          btnLabel={'Button'}
+          btnAction={() => console.log('BTN')}
         />
       </Col>
       <Col cols={{ lg: 4, md: 6, sm: 4 }}>
         <Card
-          imageUrl={'/img/greater-omaha-logo.png'}
-          description={'Desarrollo y mejoramiento de productos alimenticios congelados y refrigerados'}
-          btnLabel={'Click acá'}
+          imageUrl={'/img/hollyfood-logo.png'}
+          description={'Restaurante temático, interactivo y dinámico de comida americana.'}
+          btnLabel={'Button'}
           btnAction={() => console.log('BTN')}
         />
       </Col>
