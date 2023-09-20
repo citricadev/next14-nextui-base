@@ -206,6 +206,9 @@ const TimelineItem = () => {
           <div>sede de boutique de carnes</div>
           <span className="text-gold-brand"> JORDI PRIME GRILL</span>
         </div>
+        <div className="timeline-description timeline-description-tl copy copy-bold">
+          <div>Implementación de venta virtual</div>
+        </div>
         <div className="timeline-description timeline-description-bl copy copy-bold">
           <div>Apertura de sedes en provincias</div>
         </div>
