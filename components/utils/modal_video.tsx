@@ -1,37 +1,37 @@
+
+// modal componente 
+
+"use client";
 import React from "react";
 
-import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
+export default function ModalVideo(props: { showModal: any; onClose: any; }) {
 
-export default function ModalVideo() {
-	const { isOpen, onOpen, onOpenChange } = useDisclosure();
+	const { showModal, onClose } = props;
 
 	return (
 		<>
-			<Button onPress={onOpen}>Open Modal</Button>
-			<Modal isOpen={isOpen} onOpenChange={onOpenChange}>
-				<ModalContent>
-					{(onClose) => (
-						<>
-							<ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
-							<ModalBody>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									Nullam pulvinar risus non risus hendrerit venenatis.
-									Pellentesque sit amet hendrerit risus, sed porttitor quam.
-								</p>
-							</ModalBody>
-							<ModalFooter>
-								<Button color="danger" variant="light" onPress={onClose}>
-									Close
-								</Button>
-								<Button color="primary" onPress={onClose}>
-									Action
-								</Button>
-							</ModalFooter>
-						</>
-					)}
-				</ModalContent>
-			</Modal>
+			{
+				showModal && (
+					<div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-[rgba(0,0,0,0.5)]">
+						<div className="flex flex-col fixed bg-[#fffaf4] top-0 left-0 w-full h-full p-4 rounded-2xl z-10">
+							<div className="flex justify-end text-3xl z-20" >
+								<a onClick={() => onClose()} className="">
+									x
+								</a>
+							</div>
+							<div className="h-full flex justify-center items-center">
+								<iframe
+									className=" h-[480px] w-[854px]"
+									src={`https://www.youtube.com/embed/1rI8z07U50M`}
+									allow="acelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowFullScreen
+									title="youtube"
+								/>
+							</div>
+						</div>
+					</div>
+				)
+			}
 		</>
 	);
 }

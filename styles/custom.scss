@@ -3,7 +3,7 @@ $sections-paddings: (
     padding:24px,
   ),
   md: (
-    padding: 50px,
+    padding: 30px,
   ),
   lg: (
     padding: 60px,
@@ -77,4 +77,84 @@ $mision-vision-bg-left: (
 
 .platforms{
   @include a-set($sections-paddings);
+}
+
+// Timeline
+
+.timeline-title{
+  position: absolute;
+  width: 492px;
+  font-family: var(--font-family-a);
+  &-size-1{
+    font-size: 24px;
+  }
+  &-size-2{
+    font-size: 34px;
+  }
+  &-size-3{
+    font-size: 42px;
+  }
+  &-size-4{
+    font-size: 58px;
+  }
+  &-right{
+    text-align: left;
+    left: 216px;
+  }
+  &-left{
+    text-align: right;
+    right: 216px;
+  }
+}
+
+.timeline-description{
+  position: absolute;
+  border-bottom: solid 1px #E40E20;
+  width: 348px;
+  color: #FFF;
+  &-tl{
+    text-align: left;
+    right: 145px;
+    top: 49px;
+  }
+  &-tl2{
+    text-align: left;
+    right: 149px;
+    top: 26px;
+  }
+  &-tr{
+    text-align: right;
+    left: 151px;
+    top: 49px;
+  }
+  &-tr2{
+    text-align: right;
+    left: 151px;
+    top: 26px;
+  }
+  &-mr{
+    text-align: right;
+    left: 180px;
+    top: 108px;
+  }
+  &-ml{
+    text-align: left;
+    right: 180px;
+    top: 108px;
+  }
+  &-br{
+    text-align: right;
+    left: 151px;
+    bottom: 49px;
+  }
+  &-br2{
+    text-align: right;
+    left: 150px;
+    bottom: 26px;
+  }
+  &-bl{
+    text-align: left;
+    right: 148px;
+    bottom: 20px;
+  }
 }
