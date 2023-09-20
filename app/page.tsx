@@ -3,12 +3,10 @@ import Image from "next/image";
 import Timeline from "@/components/timeline";
 import Card from "@/components/citrica-ui/card";
 import Platforms from "@/components/platforms";
-import Sectionvideo from "@/components/citrica-ui/sectionvideo";
 
 export default function Home() {
 	return (
 		<>
-			
 			<section id="hero-section" className="hero-section">
 				<Container className="flex flex-col h-screen justify-center">
 					<Col cols={{ lg: 8, md: 6, sm: 4 }}>
@@ -25,7 +23,26 @@ export default function Home() {
 				</Container>
 			</section>
 			<section id="about-us" className="about-us">
-				<Sectionvideo/>
+				<Container className="flex flex-col h-screen justify-between">
+					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
+						<h2 className="headline text-gold-brand">
+							Quiénes somos
+						</h2>
+					</Col>
+					<Col cols={{ lg: 12, md: 6, sm: 4 }} className="flex flex-row justify-center">
+						<button className="flex flex-col items-center">
+							<Image
+								className="mb-4"
+								width={257}
+								height={117}
+								src="/img/play_circleplay-btn.png"
+								alt="logo" />
+							<h2 className="title">
+								Ver video
+							</h2>
+						</button>
+					</Col>
+				</Container>
 			</section>
 			<section id="history-section" className="history-section">
 				<Container>
@@ -43,7 +60,6 @@ export default function Home() {
 						<Timeline />
 					</Col>
 				</Container>
-				
 			</section>
 			<section id="mision-vision" className="mision-vision">
 				<Container noPadding>
@@ -173,15 +189,15 @@ export default function Home() {
 				<Container>
 					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
 						<div className="h-96 flex flex-col justify-center">
-							<h2 className="headline text-gold-brand">Contáctanos</h2>
+							<h2 className="headline mb-2 text-gold-brand">Contáctanos</h2>
 							<div className="flex gap-[32px] flex-row flex-wrap">
-								<span className="flex  text-white gap-[16px] items-center ">
+								<span className="flex copy text-white gap-[16px] items-center ">
 									<picture>
 										<img src={'/img/call.svg'} alt="call logo" />
 									</picture>
 									946 351 770
 								</span>
-								<span className="flex  text-white gap-[16px] items-center">
+								<span className="flex copy text-white gap-[16px] items-center">
 									<picture>
 										<img src={'/img/mail.svg'} alt="mail logo" />
 									</picture>
