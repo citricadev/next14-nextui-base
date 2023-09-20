@@ -3,36 +3,32 @@ import Link from "next/link"
 const FooterCUI = () => {
   return (
     <>
-
-
-      <footer className=" w-full  first-letter: py-10 bg-neutral-950 ">
-
-        <Container >
-          <Col cols={{ lg: 4, md: 2, sm: 2 }} className="center">
-
-            <div className="">
-              <span className="flex gap-5 h- mb-1 flex-wrap copy text-[color:_var(--Gray-mid,_#B3B3B2)] ">
+      <footer className=" py-10 bg-neutral-950  ">
+        <Container className="flex justify-between">
+          <Col cols={{ lg: 4, md: 3, sm: 4 }} className="flex justify-center mb-3">
+            <div className="flex flex-col">
+              <div className="flex gap-5 mb-1  copy text-[color:_var(--Gray-mid,_#B3B3B2)] ">
                 <picture className="">
                   <img src={'/img/mail.svg'} alt="mail logo" />
                 </picture>
                 info@corporacionjordi.com
-              </span>
-              <span className="flex gap-4 flex-wrap copy text-[color:_var(--Gray-mid,_#B3B3B2)] ">
+              </div>
+              <div className="flex gap-4 copy text-[color:_var(--Gray-mid,_#B3B3B2)] ">
                 <picture>
                   <img src={'/img/call.svg'} alt="call logo" />
                 </picture>
                 <span>946 351 770</span>
-              </span>
+              </div>
             </div>
           </Col>
-          <Col cols={{ lg: 4, md: 2, sm: 2 }} className="center">
-            <div className='' >
-              <img className='center w-40 h-16' src="img/logo-corp-jordi-gold-white1.svg" />
+          <Col cols={{ lg: 4, md: 3, sm: 4 }} className="center gap-1 mb-3">
+            <div className='flex justify-center items-center' >
+              <img className='center ' src="img/logo-corp-jordi-gold-white1.svg" />
             </div>
           </Col>
-          <Col cols={{ lg: 4, md: 2, sm: 4 }} className="center">
-            <div className="mt-[2px] w-[100%]">
-              <div className="flex gap-8 mb-[16px]  justify-end">
+          <Col cols={{ lg: 4, md: 6, sm: 4 }} className="flex justify-center mb-3">
+            <div className=" flex flex-col mt-[2px] ">
+              <div className="flex gap-8 mb-[16px] justify-end">
                 <Link href="#">
                   <img className="h-8" src="img/inde.svg" alt="inde icon" />
                 </Link>
@@ -49,11 +45,8 @@ const FooterCUI = () => {
             </div>
           </Col>
         </Container>
-
       </footer>
-
     </>
   )
 }
-
 export default FooterCUI
