@@ -13,7 +13,7 @@ export default function Home() {
 			<section id="hero-section" className="hero-section">
 					<Navbar/>
 				<Container className="flex flex-col h-screen justify-center">
-					<Col cols={{ lg: 8, md: 6, sm: 4 }}>
+					<Col cols={{ lg: 8, md: 6, sm: 4 }} className="animate-fade-right">
 						<Image
 							className="mb-10"
 							width={257}
