@@ -202,7 +202,7 @@ const TimelineItem = () => {
       </div>
       <div className="relative center">
         <div className="timeline-description timeline-description-tr copy copy-bold">
-          <div>Inauguración de la segunda</div>
+          <div>Inauguración de la segunda </div>
           <div>sede de boutique de carnes</div>
           <span className="text-gold-brand"> JORDI PRIME GRILL</span>
         </div>
