@@ -3,13 +3,9 @@ import Link from "next/link"
 const FooterCUI = () => {
   return (
     <>
-
-
       <footer className=" w-full  first-letter: py-10 bg-neutral-950 ">
-
         <Container >
           <Col cols={{ lg: 4, md: 2, sm: 2 }} className="center">
-
             <div className="">
               <span className="flex gap-5 h- mb-1 flex-wrap copy text-[color:_var(--Gray-mid,_#B3B3B2)] ">
                 <picture className="">
@@ -49,11 +45,8 @@ const FooterCUI = () => {
             </div>
           </Col>
         </Container>
-
       </footer>
-
     </>
   )
 }
-
 export default FooterCUI
