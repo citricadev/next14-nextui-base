@@ -9,13 +9,13 @@ const FooterCUI = () => {
             <div className="flex flex-col">
               <div className="flex gap-5 mb-1  copy text-gray-brand ">
                 <picture className="">
-                  <img src={'/img/mail.svg'} alt="mail logo" />
+                  <img src={'/img/mail.svg'} alt="mail logo"/>
                 </picture>
                 info@corporacionjordi.com
               </div>
               <div className="flex gap-4 copy text-gray-brand ">
                 <picture>
-                  <img src={'/img/call.svg'} alt="call logo" />
+                  <img src={'/img/call.svg'} alt="call logo"/>
                 </picture>
                 <span>946 351 770</span>
               </div>
@@ -27,13 +27,13 @@ const FooterCUI = () => {
             </div>
           </Col>
           <Col cols={{ lg: 4, md: 6, sm: 4 }} className="flex justify-center mb-3">
-            <div className=" flex flex-col mt-[2px] ">
+            <div className=" flex flex-col mt-[1px] ">
               <div className="flex gap-8 mb-[16px] justify-end">
                 <Link href="#">
-                  <img className="h-8" src="img/inde.svg" alt="inde icon" />
+                  <img className="h-8" src="img/inde.svg" alt="inde icon"/>
                 </Link>
                 <Link href="#">
-                  <img className="h-8" src="img/face.svg" alt="face icon" />
+                  <img className="h-8" src="img/face.svg" alt="face icon"/>
                 </Link>
               </div>
               <span className="flex flex-wrap-reverse justify-end copy  text-gray-brand">
@@ -49,5 +49,4 @@ const FooterCUI = () => {
     </>
   )
 }
-
 export default FooterCUI
