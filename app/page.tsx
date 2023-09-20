@@ -4,12 +4,14 @@ import Timeline from "@/components/timeline";
 import Card from "@/components/citrica-ui/card";
 import Platforms from "@/components/platforms";
 import Sectionvideo from "@/components/citrica-ui/sectionvideo";
+import Navbar from "@/components/citrica-ui/navbar";
 
 export default function Home() {
 	return (
 		<>
 			
 			<section id="hero-section" className="hero-section">
+					<Navbar/>
 				<Container className="flex flex-col h-screen justify-center">
 					<Col cols={{ lg: 8, md: 6, sm: 4 }}>
 						<Image

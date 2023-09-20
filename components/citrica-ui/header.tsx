@@ -1,5 +1,5 @@
 import { Container } from "@citrica/objects"
-import NavbarCUI from "../next-ui/navbar"
+
 
 const HeaderCUI = () => {
 	return (
