@@ -23,7 +23,7 @@ const FooterCUI = () => {
           </Col>
           <Col cols={{ lg: 4, md: 3, sm: 4 }} className="center gap-1 mb-3">
             <div className='flex justify-center items-center' >
-              <img className='center ' src="img/logo-corp-jordi-gold-white1.svg" />
+              <img className='center ' src="img/logo-corporacion-jordi.png" />
             </div>
           </Col>
           <Col cols={{ lg: 4, md: 6, sm: 4 }} className="flex justify-center mb-3">
@@ -49,4 +49,5 @@ const FooterCUI = () => {
     </>
   )
 }
+
 export default FooterCUI
