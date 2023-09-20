@@ -10,7 +10,7 @@ type CardProps = {
 }
 const Card = ({imageUrl, title, description, btnLabel, btnAction}: CardProps) => {
   return (
-    <div className="flex flex-col h-[380px] box-content justify-between bg-black-brand p-10 mb-8 rounded-2xl">
+    <div className="flex flex-col bg-black-brand p-10 mb-8 rounded-2xl">
       {imageUrl && (
         <picture>
           <img src={imageUrl} alt=""/>
@@ -20,7 +20,7 @@ const Card = ({imageUrl, title, description, btnLabel, btnAction}: CardProps) =>
         <p className="copy text-white mt-10 text-sm font-medium leading-6 tracking-wider">{description}</p>
       )}
       {btnAction && btnLabel && (
-        <div className="p-3">
+        <div className="p-3 flex justify-stard items-end flex-auto">
           <ButtonCUI label={btnLabel} onClick={btnAction}/>
         </div>
       )}
