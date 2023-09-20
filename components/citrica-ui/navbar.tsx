@@ -1,41 +1,6 @@
 "use client";
 import { useState } from "react";
 
-const menuItems = [
-	{
-		name: 'Quienes somos',
-		url: '#about-us'
-	},
-	{
-		name: 'Nuestra Historia',
-		url: '#history-section'
-	},
-	{
-		name: 'Visión y Misión',
-		url: '#mision-vision'
-	},
-	{
-		name: 'Nuestras Empresas',
-		url: '#our-companies'
-	},
-	{
-		name: 'Nuestras Marcas',
-		url: '#our-brands'
-	},
-	{
-		name: 'Nuestros Socios Estrategicos',
-		url: '#our-partners'
-	},
-	{
-		name: 'Contactanos',
-		url: '#contact-section'
-	},
-	{
-		name: 'Plataformas',
-		url: '#platforms'
-	}
-
-];
 export const navLinks = [
   {
     id: "about-us",
@@ -76,7 +41,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full bg-transparent fixed flex justify-between items-center navbar">
+    <nav className="w-full  p-3 bg-transparent fixed flex items-center">
       {/* Logo */}
       {/* <h1 className="text-3xl text-black">Logo</h1> */}
       
@@ -96,7 +61,7 @@ const Navbar = () => {
       </ul> */}
 
       {/* Mobile Navigation */}
-      <div className="flex flex-1 justify-end items-center mr-5">
+      <div className="flex flex-1 justify-end items-center">
         <img
           src={toggle ? '/img/button-icon.svg' : '/img/Menu.svg'}
           alt="menu"
@@ -108,14 +73,14 @@ const Navbar = () => {
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+          } p-6 bg-black-gradient absolute top-20 right-5 bg-black mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
         >
           <ul className=" list-none flex justify-end items-start flex-1 flex-col">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={` text-red-900 font-poppins font-medium cursor-pointer text-[16px] ${
-                  active === nav.title ? "text-white" : "text-dimWhite"
+                className={` text-white font-poppins font-medium cursor-pointer text-[16px] ${
+                  active === nav.title ? "text-red-600" : "text-dimWhite"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >

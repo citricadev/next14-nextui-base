@@ -93,8 +93,8 @@ const TimelineItem = () => {
           Planta
         </div>
         <div className="timeline-description timeline-description-mr copy copy-bold">
-          <div> <span className="text-gold-brand">CORPORACIÓN JORDI</span> Inauguración </div>
-          <div> de área de carnes y porcionados</div>
+          <div> Construcción de nuestro almacen</div>
+          <div> central en Pachacámac</div>
         </div>
         <picture className="relative">
           <img src={'/img/timeline-item.svg'} alt="timeline item" />
@@ -133,12 +133,13 @@ const TimelineItem = () => {
           Restaurantes
         </div>
         <div className="timeline-description timeline-description-tr copy copy-bold">
-          <div>Lanzamiento de planta</div>
-          <div>de valores agregados</div>
+        <div>Se fundó la empresa <span className="text-gold-brand">JDF FOOD,</span> ubicada</div>
+          <div>en EEUU, encargada de la exportación</div>
+          <div>de productos cárnicos</div>
         </div>
         <div className="timeline-description timeline-description-bl copy copy-bold">
-          <div>Lanzamiento de planta</div>
-          <div>de valores agregados</div>
+          <div>Instauración de planta</div>
+          <div>de proceso en Huachipa</div>
         </div>
         <picture className="relative">
           <img src={'/img/timeline-item.svg'} alt="timeline item" />
@@ -157,8 +158,8 @@ const TimelineItem = () => {
           HOLLYFOOD
         </div>
         <div className="timeline-description timeline-description-tr2 copy copy-bold">
-          <div>Lanzamiento de planta</div>
-          <div>de valores agregados</div>
+          <div>Inauguración de la boutique</div>
+          <div>de carners<span className="text-gold-brand"> JORDI PRIME GRILL</span> </div>
         </div>
         <picture className="relative">
           <img src={'/img/timeline-item.svg'} alt="timeline item" />
@@ -180,8 +181,8 @@ const TimelineItem = () => {
           Venta virtual
         </div>
         <div className="timeline-description timeline-description-tl2 copy copy-bold">
-          <div>Lanzamiento de planta</div>
-          <div>de valores agregados</div>
+          <div>Inauguración de restaurante</div>
+          <div>temático<span className="text-gold-brand"> HOLLYFOOD</span></div>
         </div>
         <div className="timeline-description timeline-description-br2 copy copy-bold">
           <div>Inauguración de nuestro almacén</div>
@@ -201,12 +202,15 @@ const TimelineItem = () => {
       </div>
       <div className="relative center">
         <div className="timeline-description timeline-description-tr copy copy-bold">
-          <div>Lanzamiento de planta</div>
-          <div>de valores agregados</div>
+          <div>Inauguración de la segunda </div>
+          <div>sede de boutique de carnes</div>
+          <span className="text-gold-brand"> JORDI PRIME GRILL</span>
+        </div>
+        <div className="timeline-description timeline-description-tl copy copy-bold">
+          <div>Implementación de venta virtual</div>
         </div>
         <div className="timeline-description timeline-description-bl copy copy-bold">
-          <div>Lanzamiento de planta</div>
-          <div>de valores agregados</div>
+          <div>Apertura de sedes en provincias</div>
         </div>
         <picture className="relative">
           <img src={'/img/timeline-item.svg'} alt="timeline item" />
@@ -225,12 +229,11 @@ const TimelineItem = () => {
           Boutique de carnes
         </div>
         <div className="timeline-description timeline-description-tr2 copy copy-bold">
-          <div>Lanzamiento de planta</div>
-          <div>de valores agregados</div>
+          <div>Inauguración de restaurante</div>
+          <div>temático<span className="text-gold-brand"> HOLLYFOOD AVIACIÓN</span></div>
         </div>
         <div className="timeline-description timeline-description-bl copy copy-bold">
-          <div>Lanzamiento de planta</div>
-          <div>de valores agregados</div>
+          <div>Apertura de almacén en Huancayo</div>
         </div>
         <picture className="relative">
           <img src={'/img/timeline-item.svg'} alt="timeline item" />
@@ -249,8 +252,8 @@ const TimelineItem = () => {
           Sedes
         </div>
         <div className="timeline-description timeline-description-mr copy copy-bold">
-          <div>Lanzamiento de planta</div>
-          <div>de valores agregados</div>
+          <div>Inauguración de la boutique de carnes</div>
+          <div><span className="text-gold-brand"> JORDI PRIME GRILL </span>en Punta Hermosa</div>
         </div>
         <picture className="relative">
           <img src={'/img/timeline-item.svg'} alt="timeline item" />
