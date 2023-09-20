@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export const navLinks = [
   {
@@ -39,6 +39,12 @@ export const navLinks = [
 const Navbar = () => {
   const [active, setActive] = useState("about-us");
   const [toggle, setToggle] = useState(false);
+  
+  const closeSidebar = () => {
+    setToggle(false); 
+  };
+  
+
 
   return (
     <nav className="w-full  p-3 bg-transparent fixed flex items-center">
@@ -63,9 +69,9 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       <div className="flex flex-1 justify-end items-center">
         <img
-          src={toggle ? '/img/button-icon.svg' : '/img/Menu.svg'}
+          src={toggle ? '/img/Menuclose.svg' : '/img/Menu.svg'}
           alt="menu"
-          className="w-[28px] h-[28px] object-contain"
+          className="w-[40px] h-[40px] object-contain"
           onClick={() => setToggle(!toggle)}
         />
 
@@ -79,10 +85,13 @@ const Navbar = () => {
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={` text-white font-poppins font-medium cursor-pointer text-[16px] ${
-                  active === nav.title ? "text-red-600" : "text-dimWhite"
+                className={` text-white font-poppins font-medium cursor-pointer hover:text-blue-800 text-[16px] ${
+                  active === nav.title ? "text-blue-300" : "text-dimWhite"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
-                onClick={() => setActive(nav.title)}
+                onClick={() => {
+                  setActive(nav.title);
+                  closeSidebar(); 
+                }}
               >
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
