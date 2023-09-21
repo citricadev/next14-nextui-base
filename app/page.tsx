@@ -73,7 +73,7 @@ export default function Home() {
 					<Col cols={{ lg: 4, md: 6, sm: 4 }}>
 						<div className="pt-10">
 							<Image
-								src={"/img/jds-food-logo.png"}
+								src={"/img/jds-food-logo.svg"}
 								width={102}
 								height={62}
 								alt="jordi logo"
@@ -85,7 +85,7 @@ export default function Home() {
 					<Col cols={{ lg: 4, md: 6, sm: 4 }}>
 						<div className="pt-10">
 							<Image
-								src={"/img/jordi-logo.png"}
+								src={"/img/jordi-prime-grill-logo.svg"}
 								width={102}
 								height={62}
 								alt="jordi logo"
@@ -98,7 +98,7 @@ export default function Home() {
 					<Col cols={{ lg: 4, md: 6, sm: 4 }}>
 						<div className="pt-10">
 							<Image
-								src={"/img/hollyfood-logo.png"}
+								src={"/img/hollyfood-logo.svg"}
 								width={102}
 								height={62}
 								alt="jordi logo"
