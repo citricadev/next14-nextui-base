@@ -9,20 +9,18 @@ import Navbar from "@/components/citrica-ui/navbar";
 export default function Home() {
 	return (
 		<>
-			
+			<Navbar/>
 			<section id="hero-section" className="hero-section">
-					<Navbar/>
-				<Container className="flex flex-col h-screen justify-center">
+				<Container>
 					<Col cols={{ lg: 8, md: 6, sm: 4 }} className="animate-fade-right">
-						<Image
-							className="mb-10"
-							width={257}
-							height={117}
-							src="/img/logo-corporacion-jordi.png"
-							alt="logo" />
-						<h2 className="display text-white">
-							Exportacion, importacion <br />y distribucion de carnes <br />y menudencias
-						</h2>
+						<div className="flex flex-col h-screen justify-center">
+							<picture>
+								<img src={'/img/logo-corporacion-jordi.png'} alt='logo corp jordi' />
+							</picture>
+							<h2 className="display text-white">
+								Exportacion, importacion <br />y distribucion de carnes <br />y menudencias
+							</h2>
+						</div>
 					</Col>
 				</Container>
 			</section>
@@ -35,7 +33,7 @@ export default function Home() {
 						<h2 className="headline text-gold-brand">
 							Nuestra Historia
 						</h2>
-						<p className="copy text-white">
+						<p className="copy text-white mt-5">
 							Nuestro desarrollo organizacional se ha basado en escalar durante estos años el mercado peruano, y dar pasos agigantados con una nueva visión de hacer empresa, nuestro mayor logro ha sido representar a muchos emprendedores que empezaron con un sueño, y que con su esfuerzo rindieron frutos, aquí les compartimos nuestra historia.
 						</p>
 					</Col>
@@ -197,7 +195,7 @@ export default function Home() {
 			<section id="platforms" className="platforms">
 				<Container>
 					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
-						<h2 className="headline text-gold-brand">Plataformas</h2>
+						<h2 className="headline text-gold-brand mb-5">Plataformas</h2>
 					</Col>
 				</Container>
 				<Container>
