@@ -20,7 +20,7 @@ const Card = ({imageUrl, title, description, btnLabel, btnAction}: CardProps) =>
         <p className="copy text-white mt-10 text-sm font-medium leading-6 tracking-wider">{description}</p>
       )}
       {btnAction && btnLabel && (
-        <div className="p-3 flex justify-stard items-end flex-auto">
+        <div className="mt-8 flex justify-stard items-end flex-auto">
           <ButtonCUI label={btnLabel} onClick={btnAction}/>
         </div>
       )}

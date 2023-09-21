@@ -9,25 +9,23 @@ import Navbar from "@/components/citrica-ui/navbar";
 export default function Home() {
 	return (
 		<>
-			
+			<Navbar/>
 			<section id="hero-section" className="hero-section">
-					<Navbar/>
-				<Container className="flex flex-col h-screen justify-center">
+				<Container>
 					<Col cols={{ lg: 8, md: 6, sm: 4 }} className="animate-fade-right">
-						<Image
-							className="mb-10"
-							width={257}
-							height={117}
-							src="/img/logo-corporacion-jordi.png"
-							alt="logo" />
-						<h2 className="display text-white">
-							Exportacion, importacion <br />y distribucion de carnes <br />y menudencias
-						</h2>
+						<div className="flex flex-col h-screen justify-center">
+							<picture>
+								<img src={'/img/logo-corporacion-jordi.png'} alt='logo corp jordi' />
+							</picture>
+							<h2 className="display text-white">
+								Exportacion, importacion <br />y distribucion de carnes <br />y menudencias
+							</h2>
+						</div>
 					</Col>
 				</Container>
 			</section>
 			<section id="about-us" className="about-us">
-				<Sectionvideo/>
+				<Sectionvideo />
 			</section>
 			<section id="history-section" className="history-section">
 				<Container>
@@ -35,7 +33,7 @@ export default function Home() {
 						<h2 className="headline text-gold-brand">
 							Nuestra Historia
 						</h2>
-						<p className="copy text-white">
+						<p className="copy text-white mt-5">
 							Nuestro desarrollo organizacional se ha basado en escalar durante estos años el mercado peruano, y dar pasos agigantados con una nueva visión de hacer empresa, nuestro mayor logro ha sido representar a muchos emprendedores que empezaron con un sueño, y que con su esfuerzo rindieron frutos, aquí les compartimos nuestra historia.
 						</p>
 					</Col>
@@ -45,7 +43,7 @@ export default function Home() {
 						<Timeline />
 					</Col>
 				</Container>
-				
+
 			</section>
 			<section id="mision-vision" className="mision-vision">
 				<Container noPadding>
@@ -118,29 +116,43 @@ export default function Home() {
 				</Container>
 				<Container>
 					<Col cols={{ lg: 3, md: 3, sm: 4 }} className="center mb-14">
-						<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo" />
+						<picture>
+							<img width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo" />
+						</picture>
 					</Col>
 					<Col cols={{ lg: 3, md: 3, sm: 4 }} className="center mb-14">
-						<Image width={194} height={165} src={'/img/premium-black-angus.png'} alt="angus logo" />
+						<picture>
+							<img width={194} height={165} src={'/img/premium-black-angus.png'} alt="angus logo" />
+						</picture>
 					</Col>
 					<Col cols={{ lg: 3, md: 3, sm: 4 }} className="center mb-14">
-						<Image width={194} height={165} src={'/img/sur-meat-cow.png'} alt="angus logo" />
+						<picture>
+							<img width={194} height={165} src={'/img/sur-meat-cow.png'} alt="angus logo" />
+						</picture>
 					</Col>
 					<Col cols={{ lg: 3, md: 3, sm: 4 }} className="center mb-14">
-						<Image width={194} height={165} src={'/img/american-golden-pork.png'} alt="angus logo" />
+						<picture>
+							<img width={194} height={165} src={'/img/american-golden-pork.png'} alt="angus logo" />
+						</picture>
 					</Col>
 				</Container>
 				<Container>
 					<Col cols={{ lgPush: 2, lg: 8, md: 6, sm: 4 }}>
 						<Container noPadding>
 							<Col cols={{ lg: 4, md: 2, sm: 4 }} className="center mb-14">
-								<Image width={194} height={165} src={'/img/sur-meat-pork.png'} alt="angus logo" />
+								<picture>
+									<img width={194} height={165} src={'/img/sur-meat-pork.png'} alt="angus logo" />
+								</picture>
 							</Col>
 							<Col cols={{ lg: 4, md: 2, sm: 4 }} className="flex justify-center items-center mb-14">
-								<Image width={194} height={165} src={'/img/hollyfood.png'} alt="angus logo" />
+								<picture>
+									<img width={194} height={165} src={'/img/hollyfood.png'} alt="angus logo" />
+								</picture>
 							</Col>
 							<Col cols={{ lg: 4, md: 2, sm: 4 }} className="center mb-14">
-								<Image width={194} height={165} src={'/img/blanqui-roja.png'} alt="angus logo" />
+								<picture>
+									<img width={194} height={165} src={'/img/blanqui-roja.png'} alt="angus logo" />
+								</picture>
 							</Col>
 						</Container>
 					</Col>
@@ -197,7 +209,7 @@ export default function Home() {
 			<section id="platforms" className="platforms">
 				<Container>
 					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
-						<h2 className="headline text-gold-brand">Plataformas</h2>
+						<h2 className="headline text-gold-brand mb-5">Plataformas</h2>
 					</Col>
 				</Container>
 				<Container>
