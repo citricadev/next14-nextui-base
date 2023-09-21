@@ -13,6 +13,7 @@ $sections-paddings: (
 .hero-section{
   background: url('../public/img/herohero-bg.jpg') #1D1D1B no-repeat center;
   background-size: cover;
+  @include a-set($sections-paddings);
 }
 .about-us{
   background: url('../public/img/about-us-video-cover.jpg') #FFF no-repeat center;
