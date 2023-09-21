@@ -5,7 +5,7 @@ const FooterCUI = () => {
     <>
       <footer className=" py-10 bg-black-brand">
         <Container className="flex justify-between">
-          <Col cols={{ lg: 4, md: 6, sm: 4 }} className="flex justify-center mb-3 not-sm">
+          <Col cols={{ lg: 4, md: 3, sm: 4 }} className="flex justify-center  mb-3 not-sm">
             <div className="flex flex-col">
               <div className="flex gap-5 mb-1  copy text-gray-brand ">
                 <picture className="">
@@ -21,15 +21,15 @@ const FooterCUI = () => {
               </div>
             </div>
           </Col>
-          <Col cols={{ lg: 4, md: 6, sm: 4 }} className="center gap-1 mb-3">
-            <div className='flex justify-center items-center' >
+          <Col cols={{ lg: 4, md: 3, sm: 4 }} className="center gap-1 mb-3">
+            <div className='flex justify-end items-center' >
               <img className='center w-[150px] h-[64px] ' src="img/logo-corporacion-jordi.png" />
             </div>
           </Col>
           <Col cols={{ lg: 4, md: 6, sm: 4 }} className="flex justify-center mb-3 only-sm">
-            <div className="flex flex-col">
+            <div className="flex items-center flex-col">
               <div className="flex gap-5 mb-1  copy text-gray-brand ">
-                <picture className="">
+                <picture>
                   <img src={'/img/mail.svg'} alt="mail logo" />
                 </picture>
                 info@corporacionjordi.com
@@ -42,9 +42,27 @@ const FooterCUI = () => {
               </div>
             </div>
           </Col>
-          <Col cols={{ lg: 4, md: 6, sm: 4 }} className="flex justify-center mb-3">
+          <Col cols={{ lg: 4, md: 5, sm: 4 }} className="flex justify-center mb-3 not-sm">
             <div className=" flex flex-col mt-[2px] ">
               <div className="flex gap-8 mb-[16px] justify-end">
+                <Link href="#">
+                  <img className="h-8" src="img/inde.svg" alt="inde icon" />
+                </Link>
+                <Link href="#">
+                  <img className="h-8" src="img/face.svg" alt="face icon" />
+                </Link>
+              </div>
+              <span className="flex flex-wrap-reverse justify-end copy  text-gray-brand">
+                Corporación Jordi - 2023 © Copyrights.
+              </span>
+              <span className="flex justify-end items-center flex-wrap copy text-gray-brand ">
+                All rights reserved.
+              </span>
+            </div>
+          </Col>
+          <Col cols={{ lg: 4, md: 5, sm: 4 }} className="justify-center mb-3 only-sm">
+            <div className=" flex  items-center flex-col mt-[2px] ">
+              <div className="flex gap-8 mb-[16px] ">
                 <Link href="#">
                   <img className="h-8" src="img/inde.svg" alt="inde icon" />
                 </Link>

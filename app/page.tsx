@@ -25,7 +25,7 @@ export default function Home() {
 				</Container>
 			</section>
 			<section id="about-us" className="about-us">
-				<Sectionvideo/>
+				<Sectionvideo />
 			</section>
 			<section id="history-section" className="history-section">
 				<Container>
@@ -43,7 +43,7 @@ export default function Home() {
 						<Timeline />
 					</Col>
 				</Container>
-				
+
 			</section>
 			<section id="mision-vision" className="mision-vision">
 				<Container noPadding>
@@ -116,29 +116,43 @@ export default function Home() {
 				</Container>
 				<Container>
 					<Col cols={{ lg: 3, md: 3, sm: 4 }} className="center mb-14">
-						<Image width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo" />
+						<picture>
+							<img width={194} height={165} src={'/img/angus-golden-beef.png'} alt="angus logo" />
+						</picture>
 					</Col>
 					<Col cols={{ lg: 3, md: 3, sm: 4 }} className="center mb-14">
-						<Image width={194} height={165} src={'/img/premium-black-angus.png'} alt="angus logo" />
+						<picture>
+							<img width={194} height={165} src={'/img/premium-black-angus.png'} alt="angus logo" />
+						</picture>
 					</Col>
 					<Col cols={{ lg: 3, md: 3, sm: 4 }} className="center mb-14">
-						<Image width={194} height={165} src={'/img/sur-meat-cow.png'} alt="angus logo" />
+						<picture>
+							<img width={194} height={165} src={'/img/sur-meat-cow.png'} alt="angus logo" />
+						</picture>
 					</Col>
 					<Col cols={{ lg: 3, md: 3, sm: 4 }} className="center mb-14">
-						<Image width={194} height={165} src={'/img/american-golden-pork.png'} alt="angus logo" />
+						<picture>
+							<img width={194} height={165} src={'/img/american-golden-pork.png'} alt="angus logo" />
+						</picture>
 					</Col>
 				</Container>
 				<Container>
 					<Col cols={{ lgPush: 2, lg: 8, md: 6, sm: 4 }}>
 						<Container noPadding>
 							<Col cols={{ lg: 4, md: 2, sm: 4 }} className="center mb-14">
-								<Image width={194} height={165} src={'/img/sur-meat-pork.png'} alt="angus logo" />
+								<picture>
+									<img width={194} height={165} src={'/img/sur-meat-pork.png'} alt="angus logo" />
+								</picture>
 							</Col>
 							<Col cols={{ lg: 4, md: 2, sm: 4 }} className="flex justify-center items-center mb-14">
-								<Image width={194} height={165} src={'/img/hollyfood.png'} alt="angus logo" />
+								<picture>
+									<img width={194} height={165} src={'/img/hollyfood.png'} alt="angus logo" />
+								</picture>
 							</Col>
 							<Col cols={{ lg: 4, md: 2, sm: 4 }} className="center mb-14">
-								<Image width={194} height={165} src={'/img/blanqui-roja.png'} alt="angus logo" />
+								<picture>
+									<img width={194} height={165} src={'/img/blanqui-roja.png'} alt="angus logo" />
+								</picture>
 							</Col>
 						</Container>
 					</Col>
