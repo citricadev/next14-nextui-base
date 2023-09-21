@@ -21,7 +21,7 @@ $sections-paddings: (
   @include a-set($sections-paddings);
 }
 .history-section, .our-companies{
-  background: url('../public/img/history-bg.jpg') #1D1D1B no-repeat top;
+  background: url('../public/img/background-history.jpg') #1D1D1B no-repeat top;
   background-size: cover;
   @include a-set($sections-paddings);
 }
