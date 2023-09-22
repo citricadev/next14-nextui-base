@@ -47,12 +47,12 @@ const Navbar = () => {
   };
 
 // change nav color scrolling
-const [color,setcolor] = useState(false)
+const [colorbg,setcolorbg] = useState(false)
   const changeColor = () => {
     if (window.scrollY >= 90) {
-      setcolor(true)
+      setcolorbg(true)
     } else {
-      setcolor(false)
+      setcolorbg(false)
     }
   }
   useEffect(() => {
@@ -63,10 +63,9 @@ const [color,setcolor] = useState(false)
     };
   }, []);
   
-   
   return (
-    <nav className={`w-full  p-3 bg-transparent fixed flex items-center ${
-      color ? "bg-[rgba(0,0,0,0.75)] z-40" : "bg-transparent"}
+    <nav className={`w-full p-3 fixed flex items-center z-30 ${
+      colorbg ? "bg-[rgba(0,0,0,0.651)] z-40 " : "bg-transparent"}
       `}>
         
       {/* Logo */}
