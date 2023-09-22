@@ -66,8 +66,9 @@ const [color,setcolor] = useState(false)
    
   return (
     <nav className={`w-full  p-3 bg-transparent fixed flex items-center ${
-      color ? "bg-[rgba(0,0,0,0.82)] z-40 tras" : "bg-transparent"}
+      color ? "bg-[rgba(0,0,0,0.75)] z-40" : "bg-transparent"}
       `}>
+        
       {/* Logo */}
       {/* <h1 className="text-3xl text-black">Logo</h1> */}
 
@@ -105,7 +106,7 @@ const [color,setcolor] = useState(false)
               {navLinks.map((nav, index) => (
                 <li
                   key={nav.id}
-                  className={` text-white font-medium cursor-pointer hover:text-blue-800 text-[16px] ${active === nav.title ? "text-red-600" : "text-white"
+                  className={`  navbar-text-color text-white font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-red-600" : "text-white"
                     } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                   onClick={() => {
                     setActive(nav.title);
