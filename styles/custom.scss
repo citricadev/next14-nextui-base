@@ -9,6 +9,9 @@ $sections-paddings: (
     padding: 60px,
   )
 );
+.sections-paddings{
+  @include a-set($sections-paddings);
+}
 
 .hero-section{
   background: url('../public/img/herohero-bg.jpg') #1D1D1B no-repeat center;

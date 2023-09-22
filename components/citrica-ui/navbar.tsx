@@ -49,7 +49,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className="w-full  p-3 bg-transparent fixed flex items-center">
+    <nav className="w-full  p-3 bg-transparent fixed flex items-center z-50">
       {/* Logo */}
       {/* <h1 className="text-3xl text-black">Logo</h1> */}
 
