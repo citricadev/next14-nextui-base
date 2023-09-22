@@ -4,7 +4,7 @@
 "use client";
 import React from "react";
 
-export default function ModalVideo(props: { showModal: any; onClose: any; }) {
+export default function ModalVideo( props: {showModal: any; onClose: any;}) {
 
 	const { showModal, onClose } = props;
 
@@ -12,10 +12,10 @@ export default function ModalVideo(props: { showModal: any; onClose: any; }) {
 		<>
 			{
 				showModal && (
-					<div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-[rgba(0,0,0,0.5)]">
+					<div className="absolute top-0 left-0 w-full h-full flex justify-center items-center z-50 bg-[rgba(0,0,0,0.5)]">
 						<div className="flex flex-col fixed bg-[#fffaf4] top-0 left-0 w-full h-full p-4 rounded-2xl z-10">
 							<div className="flex justify-end text-3xl z-20" >
-								<a onClick={() => onClose()} className="">
+								<a onClick={() => onClose(event)} className="">
 									x
 								</a>
 							</div>
