@@ -39,15 +39,25 @@ export default function Home() {
 					</Col>
 				</Container>
 				<Container>
-					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
+					<Col cols={{ lg: 12, md: 6, sm: 4 }} className="only-lg">
 						<Timeline />
 					</Col>
 				</Container>
 
 			</section>
+			<section className="sections-paddings not-lg bg-red-brand" >
+				<Container>
+					<Col cols={{ lg: 12, md: 6, sm: 4 }}>
+						<div className="py-6">
+							<h2 className="headline text-gold-brand">Mision</h2>
+							<p className="title text-white">Ofrecer los mejores productos congelados y refrigerados para satisfacer las necesidades del mercado peruano.</p>
+						</div>
+					</Col>
+				</Container>
+			</section>
 			<section id="mision-vision" className="mision-vision">
 				<Container noPadding>
-					<Col cols={{ lg: 6, md: 6, sm: 4 }} className="mision-vision-item-left">
+					<Col cols={{ lg: 6, md: 6, sm: 4 }} className="mision-vision-item-left only-lg">
 						<div className="py-6">
 							<h2 className="headline text-gold-brand">Mision</h2>
 							<p className="title text-white">Ofrecer los mejores productos congelados y refrigerados para satisfacer las necesidades del mercado peruano.</p>
