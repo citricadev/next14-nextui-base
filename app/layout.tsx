@@ -3,10 +3,12 @@ import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Providers } from "./providers";
-import Navbar from "@/components/citrica-ui/navbar";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 import Footer from "@/components/citrica-ui/footer";
+import HeaderCUI from "@/components/citrica-ui/header";
+import Navbar from "@/components/citrica-ui/navbar";
+
 
 export const metadata: Metadata = {
 	title: {
@@ -39,9 +41,9 @@ export default function RootLayout({
 					fontSans.variable
 				)}
 			>
-				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+				<Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
 					<div className="relative flex flex-col h-screen">
-						<Navbar />
+						
 						<main>
 							{children}
 						</main>

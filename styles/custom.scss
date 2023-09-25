@@ -1,0 +1,164 @@
+$sections-paddings: (
+  sm: (
+    padding:24px,
+  ),
+  md: (
+    padding: 30px,
+  ),
+  lg: (
+    padding: 60px,
+  )
+);
+.sections-paddings{
+  @include a-set($sections-paddings);
+}
+
+.hero-section{
+  background: url('../public/img/herohero-bg.jpg') #1D1D1B no-repeat center;
+  background-size: cover;
+  @include a-set($sections-paddings);
+}
+.about-us{
+  background: url('../public/img/about-us-video-cover.jpg') #FFF no-repeat center;
+  background-size: cover;
+  @include a-set($sections-paddings);
+}
+.history-section, .our-companies{
+  background: url('../public/img/background-history.jpg') #1D1D1B no-repeat top;
+  background-size: cover;
+  @include a-set($sections-paddings);
+}
+
+.our-brands{
+  background-color: #EDEDED;
+  @include a-set($sections-paddings);
+}
+
+$mision-vision-bg:(
+  sm: (
+    background:none,
+  ),
+  md: (
+    background:none,
+  ),
+  lg: (
+    background: linear-gradient(
+      to right,
+      #E40E20 0%,
+      #E40E20 50%,
+      white 50%,
+      white 100%
+    )
+  )
+);
+$mision-vision-bg-left: (
+  sm: (
+    background:#E40E20,
+  ),
+  md: (
+    background:#E40E20,
+  ),
+  lg: (
+    background: none,
+  )
+);
+.mision-vision{
+  @include a-set($mision-vision-bg);
+  @include a-set($sections-paddings);
+  &-item-left {
+    @include a-set($mision-vision-bg-left);
+  }
+}
+
+.our-partners{
+  @include a-set($sections-paddings);
+}
+
+.contact-section{
+  background: url('../public/img/contact-bg.jpg') #1D1D1B no-repeat center;
+  background-size: cover;
+}
+
+.platforms{
+  @include a-set($sections-paddings);
+}
+
+// Timeline
+
+.timeline-title{
+  position: absolute;
+  width: 492px;
+  font-family: var(--font-family-a);
+  &-size-1{
+    font-size: 24px;
+  }
+  &-size-2{
+    font-size: 34px;
+  }
+  &-size-3{
+    font-size: 42px;
+  }
+  &-size-4{
+    font-size: 58px;
+  }
+  &-right{
+    text-align: left;
+    left: 216px;
+  }
+  &-left{
+    text-align: right;
+    right: 216px;
+  }
+}
+
+.timeline-description{
+  position: absolute;
+  border-bottom: solid 1px #E40E20;
+  width: 348px;
+  color: #FFF;
+  &-tl{
+    text-align: left;
+    right: 145px;
+    top: 49px;
+  }
+  &-tl2{
+    text-align: left;
+    right: 149px;
+    top: 26px;
+  }
+  &-tr{
+    text-align: right;
+    left: 151px;
+    top: 49px;
+  }
+  &-tr2{
+    text-align: right;
+    left: 151px;
+    top: 26px;
+  }
+  &-mr{
+    text-align: right;
+    left: 180px;
+    top: 108px;
+  }
+  &-ml{
+    text-align: left;
+    right: 180px;
+    top: 108px;
+  }
+  &-br{
+    text-align: right;
+    left: 151px;
+    bottom: 49px;
+  }
+  &-br2{
+    text-align: right;
+    left: 150px;
+    bottom: 26px;
+  }
+  &-bl{
+    text-align: left;
+    right: 148px;
+    bottom: 20px;
+  }
+}
