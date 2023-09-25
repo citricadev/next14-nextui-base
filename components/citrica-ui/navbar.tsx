@@ -54,7 +54,8 @@ const [colorbg,setcolorbg] = useState(false)
     } else {
       setcolorbg(false)
     }
-  }
+  };
+
   useEffect(() => {
     window.addEventListener('scroll', changeColor);
   
@@ -62,6 +63,24 @@ const [colorbg,setcolorbg] = useState(false)
       window.removeEventListener('scroll', changeColor);
     };
   }, []);
+
+  // function close with outside of menu
+  const menuRef = useRef<HTMLDivElement | null>(null);
+  useEffect (() => {
+    const handleClickOutside = (e:MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
+        setToggle(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+
+
+
+  });
   
   return (
     <nav className={`w-full p-3 fixed flex items-center z-30 ${
@@ -87,8 +106,8 @@ const [colorbg,setcolorbg] = useState(false)
       </ul> */}
 
       {/* Mobile Navigation */}
-      <Container>
-        <div className="flex flex-1 justify-end items-center">
+      <Container >
+        <div  ref={menuRef}className="flex flex-1 justify-end items-center">
           <img
             src={toggle ? '/img/Menuclose.svg' : '/img/Menu.svg'}
             alt="menu"
