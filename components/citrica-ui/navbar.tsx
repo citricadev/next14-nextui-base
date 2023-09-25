@@ -8,34 +8,6 @@ export const navLinks = [
     id: "about-us",
     title: "Quienes somos",
   },
-  {
-    id: "history-section",
-    title: "Nuestra Historia",
-  },
-  {
-    id: "mision-vision",
-    title: "Visión y Misión",
-  },
-  {
-    id: "our-companies",
-    title: "Nuestras Empresas",
-  },
-  {
-    id: "our-brands",
-    title: "Nuestras Marcas",
-  },
-  {
-    id: "our-partners",
-    title: "Nuestros Socios Estrategicos",
-  },
-  {
-    id: "contact-section",
-    title: "Contactanos",
-  },
-  {
-    id: "platforms",
-    title: "Plataformas",
-  },
 ];
 
 const Navbar = () => {
@@ -46,8 +18,8 @@ const Navbar = () => {
     setToggle(false);
   };
 
-// change nav color scrolling
-const [colorbg,setcolorbg] = useState(false)
+  // change nav color scrolling
+  const [colorbg, setcolorbg] = useState(false)
   const changeColor = () => {
     if (window.scrollY >= 90) {
       setcolorbg(true)
@@ -58,7 +30,7 @@ const [colorbg,setcolorbg] = useState(false)
 
   useEffect(() => {
     window.addEventListener('scroll', changeColor);
-  
+
     return () => {
       window.removeEventListener('scroll', changeColor);
     };
@@ -66,8 +38,8 @@ const [colorbg,setcolorbg] = useState(false)
 
   // function close with outside of menu
   const menuRef = useRef<HTMLDivElement | null>(null);
-  useEffect (() => {
-    const handleClickOutside = (e:MouseEvent) => {
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
         setToggle(false);
       }
@@ -81,12 +53,11 @@ const [colorbg,setcolorbg] = useState(false)
 
 
   });
-  
+
   return (
-    <nav className={`w-full p-3 fixed flex items-center z-30 ${
-      colorbg ? "bg-[rgba(0,0,0,0.651)] z-40 " : "bg-transparent"}
+    <nav className={`w-full p-3 fixed flex items-center z-30 ${colorbg ? "bg-[rgba(0,0,0,0.651)] z-40 " : "bg-transparent"}
       `}>
-        
+
       {/* Logo */}
       {/* <h1 className="text-3xl text-black">Logo</h1> */}
 
@@ -107,13 +78,15 @@ const [colorbg,setcolorbg] = useState(false)
 
       {/* Mobile Navigation */}
       <Container >
-        <div  ref={menuRef}className="flex flex-1 justify-end items-center">
-          <img
-            src={toggle ? '/img/Menuclose.svg' : '/img/Menu.svg'}
-            alt="menu"
-            className="w-[40px] h-[40px] object-contain"
-            onClick={() => setToggle(!toggle)}
-          />
+        <div ref={menuRef} className="flex flex-1 justify-end items-center">
+          <picture>
+            <img
+              src={toggle ? '/img/icons/Menuclose.svg' : '/img/icons/Menu.svg'}
+              alt="menu"
+              className="w-[40px] h-[40px] object-contain"
+              onClick={() => setToggle(!toggle)}
+            />
+          </picture>
 
           {/* Sidebar */}
           <div
@@ -124,7 +97,7 @@ const [colorbg,setcolorbg] = useState(false)
               {navLinks.map((nav, index) => (
                 <li
                   key={nav.id}
-                  className={`  navbar-text-color text-white font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-red-600" : "text-white"
+                  className={`  navbar-text-color text-white font-medium cursor-pointer text-[16px]
                     } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                   onClick={() => {
                     setActive(nav.title);

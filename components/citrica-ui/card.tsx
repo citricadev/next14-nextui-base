@@ -2,18 +2,18 @@
 import ButtonCUI from "./button"
 
 type CardProps = {
-  imageUrl?:string | null
-  title?:string | null
-  description?:string | null
-  btnLabel?:string | null  
-  btnAction?: ()=> void | null
+  imageUrl?: string | null
+  title?: string | null
+  description?: string | null
+  btnLabel?: string | null
+  btnAction?: () => void | null
 }
-const Card = ({imageUrl, title, description, btnLabel, btnAction}: CardProps) => {
+const Card = ({ imageUrl, title, description, btnLabel, btnAction }: CardProps) => {
   return (
     <div className="flex flex-col bg-black-brand p-10 mb-8 rounded-2xl">
       {imageUrl && (
         <picture>
-          <img src={imageUrl} alt=""/>
+          <img src={imageUrl} alt="" />
         </picture>
       )}
       {description && (
@@ -21,7 +21,7 @@ const Card = ({imageUrl, title, description, btnLabel, btnAction}: CardProps) =>
       )}
       {btnAction && btnLabel && (
         <div className="mt-8 flex justify-stard items-end flex-auto">
-          <ButtonCUI label={btnLabel} onClick={btnAction}/>
+          <ButtonCUI label={btnLabel} onClick={btnAction} />
         </div>
       )}
 
