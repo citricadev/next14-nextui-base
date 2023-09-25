@@ -81,7 +81,7 @@ const Navbar = () => {
         <div ref={menuRef} className="flex flex-1 justify-end items-center">
           <picture>
             <img
-              src={toggle ? '/img/Menuclose.svg' : '/img/Menu.svg'}
+              src={toggle ? '/img/icons/Menuclose.svg' : '/img/icons/Menu.svg'}
               alt="menu"
               className="w-[40px] h-[40px] object-contain"
               onClick={() => setToggle(!toggle)}
