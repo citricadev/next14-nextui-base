@@ -22,8 +22,10 @@ const FooterCUI = () => {
             </div>
           </Col>
           <Col cols={{ lg: 4, md: 3, sm: 4 }} className="center gap-1 mb-3">
-            <div className='flex justify-end items-center' >
-              <img className='center w-[150px] h-[64px] ' src="img/logo-corporacion-jordi.png" />
+            <div className='flex justify-center items-center' >
+              <picture>
+                <img className='center w-[150px] h-[64px] ' src="img/logo-corporacion-jordi.svg" alt="jordi logo" />
+              </picture>
             </div>
           </Col>
           <Col cols={{ lg: 4, md: 6, sm: 4 }} className="flex justify-center mb-3 only-sm">
@@ -46,10 +48,14 @@ const FooterCUI = () => {
             <div className=" flex flex-col mt-[2px] ">
               <div className="flex gap-8 mb-[16px] justify-end">
                 <Link href="#">
-                  <img className="h-8" src="img/inde.svg" alt="inde icon" />
+                  <picture>
+                    <img className="h-8" src="img/inde.svg" alt="inde icon" />
+                  </picture>
                 </Link>
                 <Link href="#">
-                  <img className="h-8" src="img/face.svg" alt="face icon" />
+                  <picture>
+                    <img className="h-8" src="img/face.svg" alt="face icon" />
+                  </picture>
                 </Link>
               </div>
               <span className="flex flex-wrap-reverse justify-end copy  text-gray-brand">
@@ -64,10 +70,14 @@ const FooterCUI = () => {
             <div className=" flex  items-center flex-col mt-[2px] ">
               <div className="flex gap-8 mb-[16px] ">
                 <Link href="#">
-                  <img className="h-8" src="img/inde.svg" alt="inde icon" />
+                  <picture>
+                    <img className="h-8" src="img/inde.svg" alt="inde icon" />
+                  </picture>
                 </Link>
                 <Link href="#">
-                  <img className="h-8" src="img/face.svg" alt="face icon" />
+                  <picture>
+                    <img className="h-8" src="img/face.svg" alt="face icon" />
+                  </picture>
                 </Link>
               </div>
               <span className="flex flex-wrap-reverse justify-end copy  text-gray-brand">

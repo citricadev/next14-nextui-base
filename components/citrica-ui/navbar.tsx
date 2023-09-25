@@ -46,10 +46,47 @@ const Navbar = () => {
     setToggle(false);
   };
 
+// change nav color scrolling
+const [colorbg,setcolorbg] = useState(false)
+  const changeColor = () => {
+    if (window.scrollY >= 90) {
+      setcolorbg(true)
+    } else {
+      setcolorbg(false)
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeColor);
+  
+    return () => {
+      window.removeEventListener('scroll', changeColor);
+    };
+  }, []);
+
+  // function close with outside of menu
+  const menuRef = useRef<HTMLDivElement | null>(null);
+  useEffect (() => {
+    const handleClickOutside = (e:MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
+        setToggle(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
 
 
+
+  });
+  
   return (
-    <nav className="w-full  p-3 bg-transparent fixed flex items-center">
+    <nav className={`w-full p-3 fixed flex items-center z-30 ${
+      colorbg ? "bg-[rgba(0,0,0,0.651)] z-40 " : "bg-transparent"}
+      `}>
+        
       {/* Logo */}
       {/* <h1 className="text-3xl text-black">Logo</h1> */}
 
@@ -69,8 +106,8 @@ const Navbar = () => {
       </ul> */}
 
       {/* Mobile Navigation */}
-      <Container>
-        <div className="flex flex-1 justify-end items-center">
+      <Container >
+        <div  ref={menuRef}className="flex flex-1 justify-end items-center">
           <img
             src={toggle ? '/img/Menuclose.svg' : '/img/Menu.svg'}
             alt="menu"
@@ -87,7 +124,7 @@ const Navbar = () => {
               {navLinks.map((nav, index) => (
                 <li
                   key={nav.id}
-                  className={` text-white font-medium cursor-pointer hover:text-blue-800 text-[16px] ${active === nav.title ? "text-red-600" : "text-white"
+                  className={`  navbar-text-color text-white font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-red-600" : "text-white"
                     } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                   onClick={() => {
                     setActive(nav.title);
