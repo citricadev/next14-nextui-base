@@ -17,32 +17,32 @@
 // $color-secondary-light: #D4E5F7;
 // $color-secondary-white: #F2F7FC;
 
-$color-primary-lightest: “”;
-$color-primary-light: “”;
-$color-primary: #D5B16C;
-$color-primary-dark: “”;
-$color-primary-darkest: “”;
+$color-primary-lightest: #F66F7A;
+$color-primary-light: #F33F4E;
+$color-primary: #E40E20;
+$color-primary-dark:#BB0C1A;
+$color-primary-darkest: #8B0914;
 
-$color-secondary-lightest: “”;
-$color-secondary-light: “”;
+$color-secondary-lightest: #ECDBBC;
+$color-secondary-light: #E0C694;
 $color-secondary: #D5B16C;
-$color-secondary-dark: #A38243;
-$color-secondary-darkest: “”;
+$color-secondary-dark: #CA9C45;
+$color-secondary-darkest: #AB8131;
 
-$color-tertiary-lightest: “”;
-$color-tertiary-light: “”;
+$color-tertiary-lightest: #FFE699;
+$color-tertiary-light: #FFD552;
 $color-tertiary: #FCBF00;
-$color-tertiary-dark: “”;
-$color-tertiary-darkest: “”;
+$color-tertiary-dark: #DBA600;
+$color-tertiary-darkest: #B28700;
 
 $color-white: #FFFFFF;
 $color-black: #1D1D1B;
 
-$color-neutral-lightest: “”;
-$color-neutral-light: #EDEDED;
-$color-neutral-mid: “”;
-$color-neutral-dark: “”;
-$color-neutral-darkest: “”;
+$color-neutral-lightest: #F0F0F0;
+$color-neutral-light: #C6C6C2;
+$color-neutral-mid: #8E8E86;
+$color-neutral-dark: #2A2A27;
+$color-neutral-darkest: #1D1D1B;
 //-------------------------------
 // FALTAN DEFINIR SI VAN O NO
 // $color-white : #FFFFFF;
@@ -63,7 +63,7 @@ $border-bold: "";
 $border-extra-bold: "";
 
 // FONTS GOOGLE
-@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap);
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap';
 
 // FONTS LOCALES
 @font-face {
@@ -134,8 +134,8 @@ $padding-bottom-default: 20px;
     $grid-gutter__sm: 20px;
 
 // CONTAINER PADDING (ONLY ONE SIDE)
-    $container-padding__lg: 20px;
-    $container-padding__md: 24px;
+    $container-padding__lg: 112px;
+    $container-padding__md: 56px;
     $container-padding__sm: 32px;
 
 
