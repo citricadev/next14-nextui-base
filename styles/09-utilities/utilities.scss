@@ -5,133 +5,131 @@
   }
 }
 
-$only-sm-display:(
-  sm:(
+// XS
+$only-xs-block:(
+  only-xs:(
     display:block,
-  ),
-  md:(
-    display: none,
-  ),
-  lg:(
-    display: none,
   )
 );
+.only-xs{
+  display: none;
+  @include a-set($only-xs-block);
+}
 
+$only-xs-flex:(
+  only-xs:(
+    display:flex,
+  )
+);
+.only-xs-flex{
+  display: none;
+  @include a-set($only-xs-flex);
+}
+
+$not-xs-block:(
+  only-xs:(
+    display:none,
+  )
+);
+.not-xs{
+  display: block;
+  @include a-set($not-xs-block);
+}
+
+// SM
+$only-sm-block:(
+  only-sm:(
+    display: block,
+  )
+);
 .only-sm{
-  @include a-set($only-sm-display);
+  display: none;
+  @include a-set($only-sm-block);
 }
 
-$not-sm-display:(
-  sm:(
-    display:none,
-  ),
-  md:(
-    display: block,
-  ),
-  lg:(
-    display: block,
+$only-sm-flex:(
+  only-sm:(
+    display:flex,
   )
 );
+.only-sm-flex{
+  display: none;
+  @include a-set($only-sm-flex);
+}
 
+$not-sm-block:(
+  only-sm:(
+    display:none,
+  )
+);
 .not-sm{
-  @include a-set($not-sm-display);
+  display: block;
+  @include a-set($not-sm-block);
 }
 
-$only-lg-display:(
-  sm:(
-    display:none,
-  ),
-  md:(
-    display: none,
-  ),
-  lg:(
-    display: block,
-  )
-);
-
-.only-lg{
-  @include a-set($only-lg-display);
-}
-
-$not-lg-display:(
-  sm:(
-    display:block,
-  ),
-  md:(
+// MD
+$only-md-block:(
+  only-md:(
     display: block,
   ),
-  lg:(
-    display: none,
-  )
 );
-
-.not-lg{
-  @include a-set($not-lg-display);
-}
-
-$only-md-display:(
-  sm:(
-    display:none,
-  ),
-  md:(
-    display: block,
-  ),
-  lg:(
-    display: none,
-  )
-);
-
 .only-md{
-  @include a-set($only-md-display);
+  display: none;
+  @include a-set($only-md-block);
 }
 
-$not-md-display:(
-  sm:(
-    display:block,
-  ),
-  md:(
+$not-md-block:(
+  only-md:(
     display: none,
-  ),
-  lg:(
+  )
+);
+.not-md{
+  display: block;
+  @include a-set($not-md-block);
+}
+
+// LG
+$only-lg-block:(
+  only-lg:(
     display: block,
   )
 );
-
-.not-md{
-  @include a-set($not-md-display);
+.only-lg{
+  display: none;
+  @include a-set($only-lg-block);
 }
 
-//
-
-
-$only-lg-flex-display:(
-  sm:(
-    display:none,
-  ),
-  md:(
+$not-lg-block:(
+  only-lg:(
     display: none,
-  ),
-  lg:(
+  )
+);
+.not-lg{
+  display: block;
+  @include a-set($not-lg-block);
+}
+
+$only-lg-flex:(
+  only-lg:(
     display: flex,
   )
 );
-
 .only-lg-flex{
-  @include a-set($only-lg-flex-display);
+  display: none;
+  @include a-set($only-lg-flex);
 }
 
-$only-sm-md-display:(
+
+$only-sm-md-flex:(
   sm:(
     display:flex,
   ),
   md:(
     display: flex,
   ),
-  lg:(
-    display: none,
-  )
 );
 
 .only-sm-md{
-  @include a-set($only-sm-md-display);
+  display: none;
+  @include a-set($only-sm-md-flex);
 }

@@ -24,7 +24,7 @@ export const Container = ({className = '', noPadding = false, noLimit=false, chi
 }
 
 export const Col = ({cols, noPadding=false, className="", children}) => {
-    const { lg, md, sm, lgPush, mdPush, smPush } = cols;
+    const { lg, md, sm, xs, lgPush, mdPush, smPush, xsPush } = cols;
 
     const arrayClasses = [
         { [`o-col-${lg}@lg`] : lg},
@@ -32,7 +32,9 @@ export const Col = ({cols, noPadding=false, className="", children}) => {
         { [`o-col-${md}@md`] : md},
         { [`o-col-push-${mdPush}@md`] : mdPush},
         { [`o-col-${sm}@sm`] : sm},
-        { [`o-col-${smPush}@sm`] : smPush},
+        { [`o-col-push-${smPush}@sm`] : smPush},
+        { [`o-col-${xs}@xs`] : xs},
+        { [`o-col-push-${xsPush}@xs`] : xsPush},
     ]
 
     if (className){

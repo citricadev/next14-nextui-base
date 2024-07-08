@@ -17,10 +17,9 @@ $screen-mobile-md: 480px;
 $screen-mobile-sm: 320px;
 
 // BREAKPOINTS
-$break-tablet: 610px;
+$break-mobile: 576px;
+$break-tablet: 768px;
 $break-desktop: 1190px;
-
-
 
 
 @mixin media-to-up($mq) {
@@ -43,12 +42,25 @@ $break-desktop: 1190px;
 
 // RESPONSIVE SIZES
 
-@mixin sm(){
+@mixin xs(){
     @content;
 }
 
+@mixin only-xs(){
+    @include media-to-down($break-mobile){
+        @content;
+    }
+}
+
+
+@mixin sm(){
+    @include media-to-up($break-mobile + 1){
+        @content;
+    }
+}
+
 @mixin only-sm(){
-    @include media-to-down($break-tablet){
+    @include media-between(($break-mobile + 1), $break-tablet){
         @content;
     }
 }
@@ -84,6 +96,9 @@ $break-desktop: 1190px;
 }
 
 @mixin a-set($values){
+    $values-xs      : map-get($values, 'xs');
+    $values-only-xs : map-get($values, 'only-xs');
+
     $values-sm      : map-get($values, 'sm');
     $values-only-sm : map-get($values, 'only-sm');
     
@@ -92,6 +107,14 @@ $break-desktop: 1190px;
 
     $values-lg      : map-get($values, 'lg');
     $values-only-lg : map-get($values, 'only-lg');
+
+    // SMALL PHONE
+    @include xs{
+        @include a-set-values($values-xs);
+    }
+    @include only-xs{
+        @include a-set-values($values-only-xs);
+    }
 
     // PHONE
     @include sm{

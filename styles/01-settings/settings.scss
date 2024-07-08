@@ -5,18 +5,6 @@
 
 // COLORS
 
-// CITRICA SYSTEM COLORS
-// $color-primary-black: #443C1D;
-// $color-primary-dark: #87783A;
-// $color-primary: #C0AF6D;
-// $color-primary-light: #D4C89B;
-// $color-primary-white: #FCFBF8;
-// $color-secondary: #0B2037;
-// $color-secondary-dark: #1C528C;
-// $color-secondary-mid: #3783D7;
-// $color-secondary-light: #D4E5F7;
-// $color-secondary-white: #F2F7FC;
-
 $color-primary-lightest: #F66F7A;
 $color-primary-light: #F33F4E;
 $color-primary: #E40E20;
@@ -49,11 +37,11 @@ $color-neutral-darkest: #1D1D1B;
 // $color-black : #353535;
 
 // CITRICA SYSTEM BORDER RADIOUS
-$border-radious-xsm: "";
+$border-radious-xs: "";
 $border-radious-sm: "";
 $border-radious-md: "";
 $border-radious-lg: "";
-$border-radious-xlg: "";
+$border-radious-xl: "";
 
 // CITRICA SYSTEM BORDER 
 $border-extra-light: "";
@@ -61,28 +49,6 @@ $border-light: "";
 $border-md: "";
 $border-bold: "";
 $border-extra-bold: "";
-
-// FONTS GOOGLE
-@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap';
-
-// FONTS LOCALES
-@font-face {
-    font-family: "ChunkFiveEx";
-    src: url('../../fonts/Chunkfive_Ex.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Restora";
-    src: url('../../fonts/RestoraExtraLight.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-// CITRICA SYSTEM TYPOGRAPJY
-$font-family-a: 'ChunkFiveEx';
-$font-family-b: 'Restora', sans-serif;
-$font-family-c: 'Poppins', sans-serif;
 
 // CITRICA SYSTEM OPACITY
 $opacity-1:"";
@@ -98,26 +64,6 @@ $elevation-level-3: "";
 $elevation-level-4: "";
 $elevation-level-5: "";
 
-//--------------
-
-$text-btns: (
-    sm: (
-        font-size: 14pt,
-        font-weight: 500
-    ),
-    md: (
-        font-size: 18pt,
-    ),
-    lg: (
-        font-size: 20pt,
-    )
-);
-
-$font-text: '';
-
-$a-transition: all 0.3s ease-in-out;
-$padding-bottom-default: 20px;
-
 // GRID
 
 // CONTAINER WIDTH AVAILABLE
@@ -125,28 +71,31 @@ $padding-bottom-default: 20px;
 
 // COLS
     $total-columns__lg: 12;
-    $total-columns__md: 6;
+    $total-columns__md: 8;
     $total-columns__sm: 4;
+    $total-columns__xs: 2;
 
 // GUTTER BETWEEN COLS
-    $grid-gutter__lg: 56px;
-    $grid-gutter__md: 20px;
-    $grid-gutter__sm: 20px;
+    $grid-gutter__lg: 34px;
+    $grid-gutter__md: 28px;
+    $grid-gutter__sm: 24px;
+    $grid-gutter__xs: 10px;
 
 // CONTAINER PADDING (ONLY ONE SIDE)
     $container-padding__lg: 112px;
     $container-padding__md: 56px;
     $container-padding__sm: 32px;
+    $container-padding__xs: 20px;
 
 
 // RESPONSIVE
 $root-vars: (
-    sm: (
+    xs: (
         // LAYOUT
         --container-width: $container__width,
-        --total-columns: $total-columns__sm,
-        --grid-gutter: $grid-gutter__sm,
-        --container-padding: $container-padding__sm,
+        --total-columns: $total-columns__xs,
+        --grid-gutter: $grid-gutter__xs,
+        --container-padding: $container-padding__xs,
         --display-block-only-mobile: block,
         --display-block-not-mobile: none,
         // COLORS
@@ -161,6 +110,14 @@ $root-vars: (
         --font-family-b: $font-family-b,
         --font-family-c: $font-family-c,
         // CUSTOM
+    ),
+    sm: (
+        // LAYOUT
+        --total-columns: $total-columns__sm,
+        --grid-gutter: $grid-gutter__sm,
+        --container-padding: $container-padding__sm,
+        --display-block-only-mobile: none,
+        --display-block-not-mobile: block,
     ),
     md: (
         // LAYOUT

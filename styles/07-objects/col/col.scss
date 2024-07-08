@@ -6,6 +6,25 @@
 
 .o-col{
 
+    @for $i from 1 through $total-columns__xs{
+        &-#{$i}{
+            &\@xs{
+                @include xs{
+                    @include a-col($i);
+                }
+            }
+        }
+        &-push{
+            &-#{$i}{
+                &\@xs{
+                    @include xs{
+                        @include a-col-push($i);
+                    }
+                }
+            }
+        }
+    }
+
     @for $i from 1 through $total-columns__sm{
         &-#{$i}{
             &\@sm{
@@ -36,7 +55,7 @@
         &-push{
             &-#{$i}{
                 &\@md{
-                    @include md{
+                    @include only-md{
                         @include a-col-push($i);
                     }
                 }

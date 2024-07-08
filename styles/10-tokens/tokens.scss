@@ -1,5 +1,116 @@
 // Typography
+
+$display-responsive: (
+  xs: (
+    font-size: 24px,
+    line-height: 34px
+  ),
+  sm: (
+      font-size: 29px,
+      line-height: 36px
+  ),
+  md: (
+    font-size: 56px,
+    line-height: 66px
+  ),
+  lg: (
+    font-size: 64px,
+    line-height: 76px
+  )
+);
+.display {
+  font-family: var(--font-family-a);
+  font-weight: 500;
+  letter-spacing: 0;
+  text-decoration: none;
+  text-transform: none;
+  @include a-set($display-responsive);
+}
+
+$headline-responsive: (
+  xs: (
+    font-size: 16px,
+    line-height: 20px
+  ),
+  sm: (
+      font-size: 20px,
+      line-height: 22px
+  ),
+  md: (
+    font-size: 46px,
+    line-height: 52px
+  ),
+  lg: (
+    font-size: 56px,
+    line-height: 66px
+  )
+);
+
+.headline {
+  font-family: var(--font-family-a);
+  font-weight: 500;
+  letter-spacing: 0;
+  text-decoration: none;
+  text-transform: none;
+  @include a-set($headline-responsive);
+}
+$title-responsive: (
+  xs: (
+    font-size: 13px,
+    line-height: 20px
+  ),
+  sm: (
+      font-size: 14px,
+      line-height: 22px
+  ),
+  md: (
+    font-size: 27px,
+    line-height: 37px
+  ),
+  lg: (
+    font-size: 27px,
+    line-height: 37px
+  )
+);
+.title {
+  font-family: var(--font-family-a);
+  font-weight: 500;
+  letter-spacing: 0;
+  text-decoration: none;
+  text-transform: none;
+  @include a-set($title-responsive);
+}
+$subtitle-responsive: (
+  xs: (
+    font-size: 10pt,
+    line-height: 22px
+  ),
+  sm: (
+      font-size: 10pt,
+      line-height: 22px
+  ),
+  md: (
+    font-size: 14pt,
+    line-height: 22px
+  ),
+  lg: (
+    font-size: 14pt,
+    line-height: 22px
+  )
+);
+.subtitle {
+  font-family: var(--font-family-a);
+  font-weight: 500;
+  letter-spacing: 0;
+  text-decoration: none;
+  text-transform: none;
+  @include a-set($subtitle-responsive);
+}
 $copy-responsive: (
+  xs: (
+    font-size: 11px,
+    line-height: 20px
+  ),
   sm: (
       font-size: 12px,
       line-height: 22px
@@ -25,97 +136,11 @@ $copy-responsive: (
   }
 }
 
-$display-responsive: (
-  sm: (
-      font-size: 29px,
-      line-height: 36px
-  ),
-  md: (
-    font-size: 56px,
-    line-height: 66px
-  ),
-  lg: (
-    font-size: 56px,
-    line-height: 66px
-  )
-);
-.display {
-  font-family: var(--font-family-a);
-  font-weight: 500;
-  letter-spacing: 0;
-  text-decoration: none;
-  text-transform: none;
-  @include a-set($display-responsive);
-}
-
-$headline-responsive: (
-  sm: (
-      font-size: 20px,
-      line-height: 22px
-  ),
-  md: (
-    font-size: 64px,
-    line-height: 72px
-  ),
-  lg: (
-    font-size: 64px,
-    line-height: 72px
-  )
-);
-
-.headline {
-  font-family: var(--font-family-a);
-  font-weight: 500;
-  letter-spacing: 0;
-  text-decoration: none;
-  text-transform: none;
-  @include a-set($headline-responsive);
-}
-$title-responsive: (
-  sm: (
-      font-size: 14px,
-      line-height: 22px
-  ),
-  md: (
-    font-size: 27px,
-    line-height: 37px
-  ),
-  lg: (
-    font-size: 27px,
-    line-height: 37px
-  )
-);
-.title {
-  font-family: var(--font-family-a);
-  font-weight: 500;
-  letter-spacing: 0;
-  text-decoration: none;
-  text-transform: none;
-  @include a-set($title-responsive);
-}
-$subtitle-responsive: (
-  sm: (
-      font-size: 10pt,
-      line-height: 22px
-  ),
-  md: (
-    font-size: 14pt,
-    line-height: 22px
-  ),
-  lg: (
-    font-size: 14pt,
-    line-height: 22px
-  )
-);
-.subtitle {
-  font-family: var(--font-family-a);
-  font-weight: 500;
-  letter-spacing: 0;
-  text-decoration: none;
-  text-transform: none;
-  @include a-set($subtitle-responsive);
-}
 $label-responsive: (
+  xs: (
+    font-size: 10px,
+    line-height: 22px
+  ),
   sm: (
       font-size: 10px,
       line-height: 22px

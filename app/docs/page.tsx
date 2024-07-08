@@ -1,22 +1,27 @@
 import { Container, Col } from "@citrica/objects";
-import Card from "@/components/citrica-ui/card";
-import Navbar from "@/components/citrica-ui/navbar";
 
-export default function Home() {
+export default function Docs() {
 	return (
 		<>
 			<section className="hero-section">
-				<h1 className="display"> DISPLAY TEXT</h1>
-				<div className="only-xs">
+				<h1 className="display">Display</h1>
+				<h2 className="headline">Headline</h2>
+				<h3 className="title">Title</h3>
+				<h3 className="subtitle">Subtitle</h3>
+				<p className="copy">Copy</p>
+				<p><span className="body">Body</span></p>
+        <p className="label">Label</p>
+				<p><span className="label">Label</span></p>
+				<div className="bg-slate-500 text-cyan-600 center title only-xs">
 					ONLY XS
 				</div>
-				<div className="only-sm">
+				<div className="bg-slate-500 center title only-sm">
 					ONLY SM
 				</div>
-				<div className="only-md">
+				<div className="bg-slate-500 center title only-md">
 					ONLY MD
 				</div>
-				<div className="only-lg">
+				<div className="bg-slate-500 center color-primary title only-lg">
 					ONLY LG
 				</div>
 				<section className="pb-10">
